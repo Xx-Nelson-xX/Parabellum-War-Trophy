@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- XM16E1 FPW -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildXM16E1FPW</defName>
+		<label>Build XM16E1 FPW</label>
+		<description>Builds a XM16E1 FPW. Totally not The Patriot from certain game...\nCaliber: 5.56x45mm NATO</description>
+		<jobString>Building XM16E1 FPW.</jobString>
+		<workAmount>13800</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvRifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_XM16E1FPW>1</Pa_XM16E1FPW>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvRifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- HK51k -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildHK51k</defName>
+		<label>Build HK51k</label>
+		<description>Builds a HK51k. Gun Jesus call it "The SAS’ Full Auto Flashbang Dispenser" for a good reason.\nCaliber: 7.62x51mm NATO</description>
+		<jobString>Building HK51k.</jobString>
+		<workAmount>12000</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvRifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_HK51k>1</Pa_HK51k>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvRifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Thompson M1A1 .30 PDW -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM1A1_30PDW</defName>
+		<label>Build the Thompson M1A1 .30 PDW</label>
+		<description>The Thompson M1A1 .30 PDW, is a weird mix of SMG and Carabine.\nCaliber: .30 Carabine</description>
+		<jobString>Building a Thompson M1A1 .30 PDW.</jobString>
+		<workAmount>16000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_M1A1_30PDW>1</Pa_M1A1_30PDW>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- M1A1 Carabine -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM1A1C</defName>
+		<label>Build a M1A1 Carabine </label>
+		<description>Build a M1A1 Carabine, ″‘Hitler made only one big mistake when he built his Atlantic Wall’, the paratroopers liked to say. ‘He forgot to put a roof on it.‘” \nCaliber: .30 Carabine</description>
+		<jobString>Building M1A1 Carabine.</jobString>
+		<workAmount>10000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_M1A1C>1</Pa_M1A1C>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C1</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- M2 Carabine -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM2C</defName>
+		<label>Build a M2 Carabine </label>
+		<description>Build a M2 Carabine, almost exactly the same but automatic.\nCaliber: .30 Carabine</description>
+		<jobString>Building M2 Carabine.</jobString>
+		<workAmount>15000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_M2C>1</Pa_M2C>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>SMG_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

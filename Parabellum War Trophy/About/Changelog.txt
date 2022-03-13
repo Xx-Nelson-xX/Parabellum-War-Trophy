@@ -1,0 +1,26 @@
+<--------------------------------------- 1.0 -------------------------------------------->
+								Parabellum War Trophy
+								
+1.0 - 3 weapons and 2(3) New Ammo Type
+
+Carabines:
+-XM16E1 FPW: 5.56x45mm NATO, Automatic(1/10/25), Modified XM16E1/M16A1 into pistol size, high RoF, very inaccurate, light weight, compact size with large magazine, single hand weapon
+-HK51k: 7.62x51mm NATO, Automatic(1/3/7), Modified HK51/G3A3K, decent RoF, subpar stability, light weight and compact size Battle Rifle in PDW convertion
+-M1A1.30 PDW: .30 Carabine, Automatic(1/4/10), PDW convertion of the M1A1 Thompson, short range, subpar accuracy and light weight, single hand weapon
+
+Machineguns:
+-HK21E(K): 7.62x51mm NATO, Automatic(1/7/17), Compact version of the HK21E, high RoF, innacurate, light weight(compared to other LMG), compact size with large magazine
+-HK25(K): .50 BMG, Automatic(1/7/17), Modified version of the HK25, low RoF, barely controllable, light weight(compared to other HMG) with large magazine
+
+Launchers:
+-Type 89 Grenade Discharger: 50mm Type 89 shells/grenades, single shot Muzzle fed, light infantry mortar/grenade launcher, a small, light weight and versatile indirect-direct fire grenade discharger, the weapon performance sit between both grenade launcher and mortar
+-Fliegerfaust B(R): 20mm FF Rockets, Burst Rocket volley(1/5/9), Multi-barreled Anti-Aircraft Launcher, loaded with light weight 20mm mini rockets
+
+Grenades:
+-Type 99(Kai) Frag Grenade: a modified/improved version of the original grenade, its performance is weaker than average fragmentation grenade with the reduced size and explosion charge, but is very light and small to carry around, the grenade can be used as ammo for the Type 89 Grenade Discharger
+
+Ammo:
+-50mm Type 89 HE shell: High Explosive, standard ammo type for Type 89 Grenade Discharger, practically a small size mortar round with impact fuse
+-50mm Type 89 Incendiary shell: Incendiary,  small size incendiary shell, excellent counter any flammable structure
+-20mm FFHE mini-rocket: High Explosive, standard mini-rockets for the Fliegerfaust, cause small explosive blast with small amount of fragments
+-20mm FFHEI mini-rocket: High Explosive-Incendiary, modified mini-rockets for the Fliegerfaust, cause small explosive blast and ignite any flammable target withing the blast radius 

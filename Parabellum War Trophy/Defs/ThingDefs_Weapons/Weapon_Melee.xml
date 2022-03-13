@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Ballistic Knife -->
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseWeaponAndAmmoNeolithic">
+		<defName>Pa_BK</defName>
+		<label>Ballistic Knife</label>
+		<description>A spring powered single shot ballistic knife, not very good for slashing but the design is effective for stabbing and pierce, and the spring ejection mechanism can extend the reach of the weapon considerably.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Specials/BK</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractMelee</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<weaponTags>
+			<li>MidworldMelee</li>
+			<li>HitechMelee</li>
+			<li>CE_Sidearm_Melee</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<costList>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Melee_C1</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Bulk>0.6</Bulk>
+			<Mass>0.5</Mass>
+			<Flammability>0</Flammability>
+			<MeleeCounterParryBonus>1.2</MeleeCounterParryBonus>
+		</statBases>
+		<stackLimit>50</stackLimit>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<ButcheryFleshSpeed>0.1</ButcheryFleshSpeed>
+			<MeleeCritChance>0.9</MeleeCritChance>
+			<MeleeDodgeChance>0.3</MeleeDodgeChance>
+			<MeleeParryChance>0.2</MeleeParryChance>
+		</equippedStatOffsets>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BK_Shoot</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>6</range>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+			</li>
+		</verbs>
+		<tools>
+			<li Class="CombatExtended.ToolCE">
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>1.05</cooldownTime>
+				<chanceFactor>0.6</chanceFactor>
+				<armorPenetrationBlunt>4</armorPenetrationBlunt>
+				<linkedBodyPartsGroup>Handle</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>0.8</cooldownTime>
+				<chanceFactor>0.2</chanceFactor>
+				<armorPenetrationBlunt>0.8</armorPenetrationBlunt>
+				<armorPenetrationSharp>3.6</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Blade</linkedBodyPartsGroup>
+			</li>
+			<li Class="CombatExtended.ToolCE">
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1</cooldownTime>
+				<chanceFactor>1.45</chanceFactor>
+				<armorPenetrationBlunt>1.4</armorPenetrationBlunt>
+				<armorPenetrationSharp>7.0</armorPenetrationSharp>
+				<linkedBodyPartsGroup>Point</linkedBodyPartsGroup>
+			</li>
+		</tools>
+		<thingCategories>
+			<li>AgileMelee</li>
+			<li>SharpMelee</li>
+		</thingCategories>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+</Defs>

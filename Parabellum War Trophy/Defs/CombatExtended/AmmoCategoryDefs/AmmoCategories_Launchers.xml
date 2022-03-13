@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- =============== 50mm Type 89 shells/grenades =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>50mmGDHE</defName>
+		<label>50mm Type 89 HE</label>
+		<labelShort>Type 89 HE</labelShort>
+		<description>50mm Type 89 High Explosive round with impact fuse, small size like hand grenade, cause small explosive blast filled with fragments.</description>
+	</CombatExtended.AmmoCategoryDef>
+  
+	<CombatExtended.AmmoCategoryDef>
+		<defName>50mmGDFrag</defName>
+		<label>Type 99(Kai) Frag Grenade(D)</label>
+		<labelShort>Type 99(K) Frag(D)</labelShort>
+		<description>Type 99(Kai) Frag Grenade with propellant base to make it capable to lauch from the Grenade Discharger, which provide far better effective range and projectile speed but in direct fire due the timed grenade fuse doesn't do that well in high-arcing ballistic trajectories indirect fire.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>50mmGDI</defName>
+		<label>50mm Type 89 Incendiary</label>
+		<labelShort>Type 89 I</labelShort>
+		<description>50mm Type 89 Incendiary round with impact fuse, doesn't contain that much incendiary material as standard mortar round but is enough to destroy/damage small structures/fortification.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>50mmGDSmoke</defName>
+		<label>50mm Type 95 Smoke</label>
+		<labelShort>Type 95 Smoke</labelShort>
+		<description>50mm Type 95 Smoke round with timed fuse, contain 0.11kg of HC type smoke mixture to produce a decent size of smoke screen.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<!-- =============== Fliegerfaust Mini Rockets =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>20mmFFHE</defName>
+		<label>20mm FFMR HE</label>
+		<labelShort>20mm FFHE</labelShort>
+		<description>20mm Fliegerfaust High Explosive mini rocket, cause small explosive blast, very effective counter soft/light armored target.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>20mmFFHEI</defName>
+		<label>20mm FFMR HEI</label>
+		<labelShort>20mm FFHEI</labelShort>
+		<description>20mm Fliegerfaust High Explosive-Incendiary mini rocket, cause small explosive blast, detonate a small incendiary sub-munition after impact, very effective counter flammable target.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<!-- =============== .30 Carabine =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>30CFMJ</defName>
+		<label>.30 Carabine FMJ</label>
+		<labelShort>.30C FMJ</labelShort>
+		<description>Standard Full Metal Jacket ammo, more powerful tan pistol round but not enought to be an intermediate catridge.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>30CHP</defName>
+		<label>.30 Carabine HP</label>
+		<labelShort>.30C HP</labelShort>
+		<description>Hollow Point ammo, improved damage counter soft target with less armor penetration.</description>
+	</CombatExtended.AmmoCategoryDef>
+  
+ </Defs>

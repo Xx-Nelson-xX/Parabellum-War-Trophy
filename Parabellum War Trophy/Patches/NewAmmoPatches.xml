@@ -1,0 +1,11 @@
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_SP"]/ammoTypes</xpath>
+		<value>
+			<Ammo_30Carabine_FMJ>Bullet_30Carabine_FMJ</Ammo_30Carabine_FMJ>
+			<Ammo_30Carabine_HP>Bullet_30Carabine_HP</Ammo_30Carabine_HP>
+		</value>
+	</Operation>
+
+</Patch>

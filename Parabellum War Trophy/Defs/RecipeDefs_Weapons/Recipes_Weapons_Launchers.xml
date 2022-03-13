@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- =============== Carl Gustav fm/42 Recoiless anti-tank Rifle =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_Type89GD</defName>
+		<label>Build Type 89 grenade discharger</label>
+		<description>Builds the Type 89 grenade discharger, not as effective as a rocket launcher, but can still easily penetrate any armor.\nCaliber: 50mm GD shell/grenades</description>
+		<jobString>Building Type 89 grenade discharger.</jobString>
+		<workAmount>12000</workAmount>
+		<skillRequirements>
+			<Crafting>14</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Launcher_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Leathers</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_Type89GD>1</Pa_Type89GD>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Launcher_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>Leathers</li>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>HeavyTurrets</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== Fliegerfaust B =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_FFB</defName>
+		<label>Build Fliegerfaust B(R)</label>
+		<description>Builds the Fliegerfaust B(Replica) multi-barreled Anti-Aircraft launchers, rumors said their performance counter infantry is better than the army though.\nCaliber: 20mm Fliegerfaust Mini Rockets</description>
+		<jobString>Building Fliegerfaust B.</jobString>
+		<workAmount>30000</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Launcher_Component</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>86</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_FFB>1</Pa_FFB>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Launcher_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_I</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

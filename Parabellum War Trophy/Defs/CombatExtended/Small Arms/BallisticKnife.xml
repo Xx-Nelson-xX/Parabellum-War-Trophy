@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_BK</defName>
+		<label>Ballistic Knife</label>
+		<ammoTypes>
+			<Pa_BK>BK_Shoot</Pa_BK>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="SK_BaseBullet">
+		<graphicData>
+			<texPath>Things/Projectile/BK_blade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<defName>BK_Shoot</defName>
+		<label>Ballistic Knife(Launch)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Stab</damageDef>
+			<speed>20</speed>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationSharp>7.4</armorPenetrationSharp>
+			<armorPenetrationBlunt>5</armorPenetrationBlunt>
+			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>Pa_BK</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+
+</Defs>

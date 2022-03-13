@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Type 89 grenade discharger -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_Type89GD</defName>
+        <label>Type 89 GD</label>
+        <description>Type 89 grenade discharger, an ancient early war grenade discharger/light infantry mortar, a rather unique type of infantry support weapon, unlike any grenade launchers and mortar, it has better effective range and damage than average grenade launcher, and far more versatile and portable than average mortar, the downside is, the weapon sit between both grenade launcher and mortar, so its performance and disadvantages.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Launchers/Type89GD</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <SightsEfficiency>1.32</SightsEfficiency>
+            <ShotSpread>0.06</ShotSpread>
+            <SwayFactor>1</SwayFactor>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            <Bulk>4.1</Bulk>
+            <Mass>4.7</Mass>
+        </statBases>
+		<generateCommonality>0.3</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>RKT2</li>
+			<li>Launchers</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+                <verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_50mmGDShell_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>0.6</circularError>
+				<minRange>5</minRange>
+                <warmupTime>0.74</warmupTime>
+				<forcedMissRadius>0</forcedMissRadius>
+                <range>62</range>
+				<requireLineOfSight>false</requireLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <noiseRadius>5</noiseRadius>
+                <soundCast>Shot_PzF</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+				<onlyManualCast>true</onlyManualCast>
+				<indirectFirePenalty>0.1</indirectFirePenalty>
+            </li>
+        </verbs>
+        <comps>
+		<li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>1</reloadTime>
+                <ammoSet>AmmoSet_50mmGDShell</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Launcher_Component>1</Launcher_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+			<Plasteel>6</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Fliegerfaust B -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_FFB</defName>
+        <label>Fliegerfaust B(R)</label>
+        <description>Fliegerfaust B(Replica), was an ancient late war last ditch weapon, its intention is more a moral boost for the troops than actual solution counter enemies air superiority, though it does work counter Close Air Support aircrafts when they are close enough.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Launchers/FFB</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <SightsEfficiency>1.12</SightsEfficiency>
+            <ShotSpread>0.22</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+            <Bulk>14</Bulk>
+            <Mass>5.5</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <weaponTags>
+            <li>RKT3</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>EliteGun</li>
+            <li>TierOneAdvanced</li>
+			<li>SyndicateLaunchers</li>
+			<li>EmpireGrenadeDestructive</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Launchers</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_20mmFFMR_HE</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<circularError>0.6</circularError>
+				<minRange>3</minRange>
+                <warmupTime>1.2</warmupTime>
+				<forcedMissRadius>0</forcedMissRadius>
+				<burstShotCount>9</burstShotCount>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+                <range>65</range>
+				<!--<requireLineOfSight>false</requireLineOfSight>-->
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <noiseRadius>3</noiseRadius>
+                <soundCast>Shot_FF</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>8</muzzleFlashScale>
+				<onlyManualCast>true</onlyManualCast>
+				<!--<indirectFirePenalty>0.1</indirectFirePenalty>-->
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aimedBurstShotCount>5</aimedBurstShotCount>
+				<aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>9</magazineSize>
+                <reloadTime>3.8</reloadTime>
+                <ammoSet>AmmoSet_FFB</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Launcher_Component>2</Launcher_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+			<Plasteel>12</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>

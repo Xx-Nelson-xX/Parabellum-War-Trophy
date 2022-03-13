@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- HK21E(K) -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_HK21EK</defName>
+        <label>HK21Ek</label>
+        <description>The HK21 Export Kurz is a modified GPMG with removed the stock, bipod and shorten the barrel to make it lighter and easier to carry around, though that reduce its stability, accuracy and effective range as trade off.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MGs/HK21EK</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2100</MarketValue>
+            <Flammability>0.3</Flammability>
+            <SightsEfficiency>0.9</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1.85</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <Bulk>10.2</Bulk>
+            <Mass>8.5</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+            <li>MG3</li>
+			<li>MG2</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.85</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>17</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.76</warmupTime>
+                <range>48</range>
+                <soundCast>Shot_M60GPMG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>7</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>100</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.8</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+			<Plastic>20</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- HK25(K) -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_HK25K</defName>
+        <label>HK25(K)</label>
+        <description>The HK25(Krieg) is a modified HK25 Heavy MachineGun, further reduce its weight and size to be more man-portable, the trade off is it kicks more and less controllable than the original one, might require special gear and skillful shooter to use it effectively.</description>
+        <graphicData>
+            <texPath>Things/Weapons/MGs/HK25K</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>2800</MarketValue>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+            <Bulk>15.8</Bulk>
+            <Mass>15</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>MG4</li>
+            <li>GunHeavy</li>
+            <li>MachineGun</li>
+            <li>BrotherhoodHeavy</li>
+            <li>SectarianHeavy</li>
+            <li>SyndicateMachineGun</li>
+            <li>OrionHeavy</li>
+			<li>CE_MachineGun</li>
+			<li>CE_AI_Suppressive</li>
+        </weaponTags>
+        <thingCategories>
+            <li>MachineGun</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.8</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_50BMG_FMJ</defaultProjectile>
+                <warmupTime>1.1</warmupTime>
+                <range>56</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <burstShotCount>7</burstShotCount>
+                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+                <soundCast>RF_ShotHecateII</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>3</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>50</magazineSize>
+                <reloadTime>8</reloadTime>
+                <ammoSet>AmmoSet_50BMG</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>6</Weapon_Parts>
+			<Plastic>25</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>
