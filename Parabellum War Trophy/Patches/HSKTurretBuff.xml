@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<!-- FGM-148 Javelin turret -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Gun_ATML"]/verbs</xpath>
+		<value>
+			<verbs>
+				<li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+					<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+					<hasStandardCommand>true</hasStandardCommand>
+					<defaultProjectile>Bullet_127mmJFGM_HEAT</defaultProjectile>
+					<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+					<minRange>5</minRange>
+					<warmupTime>3</warmupTime>
+					<forcedMissRadius>0</forcedMissRadius>
+					<range>130</range>
+					<requireLineOfSight>false</requireLineOfSight>
+					<targetParams>
+						<canTargetLocations>true</canTargetLocations>
+					</targetParams>
+					<noiseRadius>8</noiseRadius>
+					<soundCast>USCM_shotM5</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>10</muzzleFlashScale>
+					<onlyManualCast>true</onlyManualCast>
+					<!--<indirectFirePenalty>0.1</indirectFirePenalty>-->
+					<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+				</li>
+			</verbs>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">	
+		<xpath>Defs/ThingDef[defName="Gun_ATML"]/comps/li[@Class="CombatExtended.CompProperties_AmmoUser"]/ammoSet</xpath>
+		<value>
+			<ammoSet>AmmoSet_JFGM</ammoSet>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">	
+		<xpath>Defs/ThingDef[defName="LightMissileSystem"]/interactionCellOffset</xpath>
+	</Operation>
+
+</Patch>

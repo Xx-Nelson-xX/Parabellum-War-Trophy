@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">	
+	<xpath>Defs/ThingDef[defName="PaWT_HK21EK" 
+					  or defName="PaWT_HK25K"
+					  or defName="PaWT_Abzats"]/weaponTags</xpath>
+		<value>
+			<li>Bipod_PaMG</li>
+		</value>
+	</Operation>
+	
+</Patch>

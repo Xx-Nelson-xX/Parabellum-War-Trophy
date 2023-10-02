@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="WeaponCraftingWorkTable" or defName="AdvWeaponCraftingWorkTable"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_CustomWeaponPort"]/filter/thingDefs</xpath>
+			<value>
+				<!-- Rifles -->
+				<li>PaWT_G3c</li> 			<!--Rifles III -->
+				<!-- Carbines -->
+				<li>PaWT_HK33c</li> 		<!--Guns II -->
+				<!-- SMG -->
+				<li>PaWT_MP5B</li> 			<!--SMG I -->
+				<!-- Pistols -->
+				<!-- Shotguns -->
+				<!-- Heavy -->
+				<!-- Sniper Rifles -->
+				<!-- Anti-Material Rifles -->
+			</value>
+		<order>Append</order>
+	</Operation>
+	
+</Patch>

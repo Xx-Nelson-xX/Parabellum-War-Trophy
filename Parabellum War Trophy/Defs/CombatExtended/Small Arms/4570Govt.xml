@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>Ammo4570Govt</defName>
+		<label>.45-70 Government</label>
+		<parent>AmmoHighCaliber</parent>
+		<iconPath>Things/Ammo/4570Govt/JHP/JHP_c</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_4570Govt</defName>
+		<label>.45-70 Government</label>
+		<ammoTypes>
+			<Ammo_4570Govt_FMJ>Bullet_4570Govt_FMJ</Ammo_4570Govt_FMJ>
+			<Ammo_4570Govt_JHP>Bullet_4570Govt_JHP</Ammo_4570Govt_JHP>
+			<Ammo_4570Govt_Forage>Bullet_4570Govt_Forage</Ammo_4570Govt_Forage>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_LSHR</defName>
+		<label>Large Size Hunting Round</label>
+		<ammoTypes>
+			<Ammo_4570Govt_FMJ>Bullet_4570Govt_FMJ</Ammo_4570Govt_FMJ>
+			<Ammo_4570Govt_JHP>Bullet_4570Govt_JHP</Ammo_4570Govt_JHP>
+			<Ammo_4570Govt_Forage>Bullet_4570Govt_Forage</Ammo_4570Govt_Forage>
+			<Ammo_127x42mmB_FMJ>Bullet_127x42mmB_FMJ</Ammo_127x42mmB_FMJ>
+			<Ammo_127x42mmB_HP>Bullet_127x42mmB_HP</Ammo_127x42mmB_HP>
+			<Ammo_127x42mmB_API>Bullet_127x42mmB_API</Ammo_127x42mmB_API>
+			<Ammo_127x42mmB_EMP>Bullet_127x42mmB_EMP</Ammo_127x42mmB_EMP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="4570GovtBase" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Popular Big Game Hunting round for old school rifles, .50-70 Govt and .50-90 Sharp replacement with better ballistic.</description>
+		<statBases>
+			<Mass>0.038</Mass>
+			<Bulk>0.057</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>Ammo4570Govt</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="4570GovtBase">
+		<defName>Ammo_4570Govt_FMJ</defName>
+		<label>.45-70 Government (FMJ)</label>
+		<graphicData>
+			<texPath>Things/Ammo/4570Govt/FMJ</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2</MarketValue>
+		</statBases>
+		<ammoClass>4570FMJ</ammoClass>
+		<cookOffProjectile>Bullet_4570Govt_FMJ</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="4570GovtBase">
+		<defName>Ammo_4570Govt_JHP</defName>
+		<label>.45-70 Government (JHP)</label>
+		<graphicData>
+			<texPath>Things/Ammo/4570Govt/JHP</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.2</MarketValue>
+		</statBases>
+		<ammoClass>4570JHP</ammoClass>
+		<cookOffProjectile>Bullet_4570Govt_JHP</cookOffProjectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="4570GovtBase">
+		<defName>Ammo_4570Govt_Forage</defName>
+		<label>.45-70 Government (Forage)</label>
+		<graphicData>
+			<texPath>Things/Ammo/4570Govt/Forage</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.7</MarketValue>
+		</statBases>
+		<ammoClass>4570Forage</ammoClass>
+		<cookOffProjectile>Bullet_4570Govt_Forage</cookOffProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="Base4570GovtBullet" ParentName="SK_BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base4570GovtBullet">
+		<defName>Bullet_4570Govt_FMJ</defName>
+		<label>.45-70 Government (FMJ)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>97</speed><!--487m/s-->
+			<damageAmountBase>25</damageAmountBase>
+			<!-- <armorPenetrationBase>0.65</armorPenetrationBase> -->
+			<armorPenetrationSharp>11</armorPenetrationSharp>
+			<armorPenetrationBlunt>58</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base4570GovtBullet">
+		<defName>Bullet_4570Govt_JHP</defName>
+		<label>.45-70 Government (JHP)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>139</speed><!--693m/s-->
+			<damageAmountBase>42</damageAmountBase>
+			<!-- <armorPenetrationBase>0.65</armorPenetrationBase> -->
+			<armorPenetrationSharp>12.2</armorPenetrationSharp>
+			<armorPenetrationBlunt>96.39</armorPenetrationBlunt>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base4570GovtBullet">
+		<defName>Bullet_4570Govt_Forage</defName>
+		<label>.45-70 Government (Forage)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>79</speed><!--396m/s-->
+			<damageAmountBase>3</damageAmountBase>
+			<pelletCount>9</pelletCount>
+			<!-- <armorPenetrationBase>0.65</armorPenetrationBase> -->
+			<armorPenetrationSharp>3.4</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.73</armorPenetrationBlunt>
+			<spreadMult>36</spreadMult>
+		</projectile>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+	
+	<RecipeDef Name="AmmoRecipe4570GovtBase" Abstract="true">
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>800</workAmount>
+		<workSkill>Crafting</workSkill>
+		<targetCountAdjustment>40</targetCountAdjustment>
+		<unfinishedThingDef>UnfinishedAmmo</unfinishedThingDef>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisites>
+			<li>Parabellum_Alpha</li>
+		</researchPrerequisites>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipe4570GovtBase">
+		<defName>MakeAmmo_4570Govt_FMJ</defName>
+		<label>make .45-70 Govt (FMJ) cartridge x40</label>
+		<description>Craft 40 .45-70 Govt (FMJ) cartridge.</description>
+		<jobString>Making .45-70 Govt (FMJ) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_4570Govt_FMJ>40</Ammo_4570Govt_FMJ>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipe4570GovtBase">
+		<defName>MakeAmmo_4570Govt_JHP</defName>
+		<label>make .45-70 Govt (JHP) cartridge x40</label>
+		<description>Craft 40 .45-70 Govt (JHP) cartridge.</description>
+		<jobString>Making .45-70 Govt (JHP) cartridges.</jobString>
+		<workAmount>1000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_4570Govt_JHP>40</Ammo_4570Govt_JHP>
+		</products>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Pistols_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="AmmoRecipe4570GovtBase">
+		<defName>MakeAmmo_4570Govt_Forage</defName>
+		<label>make .45-70 Govt (Forage) cartridge x40</label>
+		<description>Craft 40 .45-70 Govt (Forage) cartridge.</description>
+		<jobString>Making .45-70 Govt (Forage) cartridges.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+				<li>Woody</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_4570Govt_Forage>40</Ammo_4570Govt_Forage>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+		</skillRequirements>
+		<workSkillLearnFactor>0.8</workSkillLearnFactor>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

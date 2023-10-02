@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_GalilHybrid</defName>
+		<label>5.56x45mm / 5.45x39mm / 7.62x39mm</label>
+		<ammoTypes>
+			<Ammo_556x45mmNATO_FMJ>Bullet_556x45mmNATO_FMJ</Ammo_556x45mmNATO_FMJ>
+			<Ammo_556x45mmNATO_AP>Bullet_556x45mmNATO_AP</Ammo_556x45mmNATO_AP>
+			<Ammo_556x45mmNATO_HP>Bullet_556x45mmNATO_HP</Ammo_556x45mmNATO_HP>
+			<Ammo_762x39mmSoviet_FMJ>Bullet_762x39mmSoviet_FMJ</Ammo_762x39mmSoviet_FMJ>
+			<Ammo_762x39mmSoviet_AP>Bullet_762x39mmSoviet_AP</Ammo_762x39mmSoviet_AP>
+			<Ammo_762x39mmSoviet_HP>Bullet_762x39mmSoviet_HP</Ammo_762x39mmSoviet_HP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+</Defs>

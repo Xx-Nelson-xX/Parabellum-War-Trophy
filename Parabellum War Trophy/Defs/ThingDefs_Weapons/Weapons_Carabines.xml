@@ -3,12 +3,13 @@
 
 	<!-- XM16E1 FPW -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>Pa_XM16E1FPW</defName>
+        <defName>PaWT_XM16E1FPW</defName>
         <label>XM16E1 FPW</label>
         <description>The XM16E1 Firing Port Weapon is a modified XM16E1/M16A1 in super compact package for shooting at the Vehicle firing ports(the holes from the side and doors of old IFVs), comes with no stock and in addition with short barrel and handguard, the weapon is very ineffective for medium~long range combat, is very handy for suppressive fire and Close Quarter Combat, and is light enought to use it one handed by skillful soldiers... probably.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/XM16E1FPW</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -74,12 +75,13 @@
 	
 	<!-- HK51k -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>Pa_HK51k</defName>
+        <defName>PaWT_HK51k</defName>
         <label>HK51k</label>
         <description>A carabine size Battle Rifle designed for special forces, its compact size makes it very effective for Urban/Close Range combat, it has the same downside like any PDW rifle convertion, plus firing full lenght rifle ammo makes the muzzle flash real noticeable for both the shooter and enemies.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/HK51K</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -146,12 +148,13 @@
 	
 	<!-- M1A1 .30 PDW -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>Pa_M1A1_30PDW</defName>
+        <defName>PaWT_M1A1_30PDW</defName>
         <label>M1A1 .30 PDW</label>
         <description>The Thompson M1A1 .30 PDW is a modified M1A1 Thompson chambered in .30 Carabine, the idea start with the Personal Defense Weapons for non-frontline combatant or backup weapons for vehicle crew, the weapon was discarded due the M1 carabine proven to be a more economic solution in the end.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/Thompson30PDW</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -159,7 +162,7 @@
             <SightsEfficiency>0.8</SightsEfficiency>
             <ShotSpread>0.08</ShotSpread>
             <SwayFactor>1.4</SwayFactor>
-            <RangedWeapon_Cooldown>0.78</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.62</RangedWeapon_Cooldown>
             <Bulk>4.6</Bulk>
             <Mass>3.6</Mass>
         </statBases>
@@ -182,7 +185,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_30Carabine_FMJ</defaultProjectile>
-                <warmupTime>0.52</warmupTime>
+                <warmupTime>0.46</warmupTime>
                 <range>32</range>
                 <burstShotCount>10</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -216,7 +219,7 @@
 	
 	<!-- M1A1 Carabine -->
     <ThingDef ParentName="BaseGun_LongBarreled">
-        <defName>Pa_M1A1C</defName>
+        <defName>PaWT_M1A1C</defName>
         <label>M1A1 Carabine</label>
         <description>The M1A1 Carabine is a lightweight defense weapon designed for support troop, since pistols are not very effective weapon for the role, the army resquested a suitable weapon as replacement, and after lots of prototypes and trials, the M1 Carabine became standarized for the role and participated most of the 50s~70s conflicts before got replaced with modern weapons, this variant is designed for the paratroopers.</description>
         <graphicData>
@@ -251,7 +254,7 @@
                 <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_30Carabine_FMJ</defaultProjectile>
-                <warmupTime>0.34</warmupTime>
+                <warmupTime>0.3</warmupTime>
                 <range>40</range>
                 <soundCast>RF_ShotAT2K</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
@@ -280,12 +283,13 @@
 	
 	<!-- M2 Carabine -->
     <ThingDef ParentName="Pa_WwBayonetB">
-        <defName>Pa_M2C</defName>
+        <defName>PaWT_M2C</defName>
         <label>M2 Carabine</label>
         <description>The M2 Carabine is the selective fire variant of the former M1 carabine due the demand of the army in the late war, same for the bayonet lung and the "Banana" 30rd magazine, which increase the weapon ofensive role as the conflict escalate.</description>
         <graphicData>
             <texPath>Things/Weapons/Carabines/M2C</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.96</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -345,6 +349,141 @@
 		</modExtensions>
         <smeltProducts>
 			<Weapon_Parts>6</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Marlin 1895 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_Marlin1895C</defName>
+        <label>Marlin 1895</label>
+        <description>The Marlin 1895 is the one of the latest level-action design, a modified Marlin 1894 chambered in powerful .45-70 Government round, very effective for hunting.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/M1895</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.9</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.12</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>9.2</Bulk>
+            <Mass>3.3</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <weaponTags>
+            <li>RF1</li>
+			<li>RF2</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierOneSniper</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_4570Govt_FMJ</defaultProjectile>
+                <warmupTime>0.74</warmupTime>
+                <range>45</range>
+                <soundCast>ShotDesertEagle</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.7</reloadTime>
+                <ammoSet>AmmoSet_4570Govt</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.9</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Micro Galil ACE 21 Hybrid -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>PaWT_GalilACE21H</defName>
+        <label>Micro Galil ACE 21(H)</label>
+        <description>The IWI Galil "ACE" series is based upon the original design of the IMI Galil, but instead utilizes a modern design to increase its accuracy and lower its weight, while maintaining the original Galil's ergonomics, ease of maintenance and reliability under battle conditions. In the design, emphasis was particularly placed on increasing the reliability and accuracy under adverse battlefield conditions, the 21 H(Hybrid) variant offer compact size configuration + compatiblility with ammo from both side of the block.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Carabines/MicroGalilACE21H</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1600</MarketValue>
+            <Flammability>0</Flammability>
+            <SightsEfficiency>1.05</SightsEfficiency>
+            <ShotSpread>0.064</ShotSpread>
+            <SwayFactor>1.2</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>6.9</Bulk>
+            <Mass>3</Mass>
+        </statBases>
+        <weaponTags>
+            <li>RF3</li>
+			<li>RF4</li>
+            <li>AdvancedGun</li>
+			<li>IndustrialGunAdvanced</li>
+            <li>TierTwoRifle</li>
+			<li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.25</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
+                <burstShotCount>12</burstShotCount>
+                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <warmupTime>0.5</warmupTime>
+                <range>42</range>
+                <soundCast>RF_ShotGalil</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>5</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>35</magazineSize>
+                <reloadTime>2.4</reloadTime>
+                <ammoSet>AmmoSet_GalilHybrid</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <AdvRifle_Component>1</AdvRifle_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+			<Plastic>6</Plastic>
         </smeltProducts>
     </ThingDef>
 

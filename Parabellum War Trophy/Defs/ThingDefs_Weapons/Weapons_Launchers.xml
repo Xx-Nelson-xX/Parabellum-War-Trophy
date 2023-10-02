@@ -3,12 +3,13 @@
 
 	<!-- Type 89 grenade discharger -->
     <ThingDef ParentName="BaseGun_Heavy">
-        <defName>Pa_Type89GD</defName>
+        <defName>PaWT_Type89GD</defName>
         <label>Type 89 GD</label>
         <description>Type 89 grenade discharger, an ancient early war grenade discharger/light infantry mortar, a rather unique type of infantry support weapon, unlike any grenade launchers and mortar, it has better effective range and damage than average grenade launcher, and far more versatile and portable than average mortar, the downside is, the weapon sit between both grenade launcher and mortar, so its performance and disadvantages.</description>
         <graphicData>
             <texPath>Things/Weapons/Launchers/Type89GD</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
@@ -83,12 +84,13 @@
 	
 	<!-- Fliegerfaust B -->
     <ThingDef ParentName="BaseGun_Heavy">
-        <defName>Pa_FFB</defName>
+        <defName>PaWT_FFB</defName>
         <label>Fliegerfaust B(R)</label>
         <description>Fliegerfaust B(Replica), was an ancient late war last ditch weapon, its intention is more a moral boost for the troops than actual solution counter enemies air superiority, though it does work counter Close Air Support aircrafts when they are close enough.</description>
         <graphicData>
             <texPath>Things/Weapons/Launchers/FFB</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
         </graphicData>
         <soundInteract>Artillery_ShellLoaded</soundInteract>
         <statBases>
@@ -164,6 +166,237 @@
 			<Launcher_Component>2</Launcher_Component>
             <Weapon_Parts>4</Weapon_Parts>
 			<Plasteel>12</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- FGM-148 Javelin -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>PaWT_FGM148J</defName>
+        <label>FGM-148 Javelin</label>
+        <description>FGM-148 Javelin, is a portable anti-tank missile system. Its fire-and-forget design uses automatic infrared guidance that allows the user to seek cover immediately after launch, in contrast to wire-guided systems. The Javelin's high explosive anti-tank (HEAT) warhead can defeat modern tanks by top attack, hitting them from above, where their armor is thinnest, and is also useful against fortifications in a direct attack flight.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Launchers/JavelingFGM</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+        </graphicData>
+        <soundInteract>Artillery_ShellLoaded</soundInteract>
+        <statBases>
+            <MarketValue>4200</MarketValue>
+            <SightsEfficiency>2.5</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>0.85</SwayFactor>
+            <RangedWeapon_Cooldown>8</RangedWeapon_Cooldown>
+            <Bulk>6.6</Bulk>
+            <Mass>6.4</Mass>
+        </statBases>
+		<generateCommonality>0.4</generateCommonality>
+        <weaponTags>
+            <li>RKT3</li>
+            <li>Launchers</li>
+            <li>SyndicateLaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>EmpireGrenadeDestructive</li>
+        </weaponTags>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Launchers</li>
+        </thingCategories>
+		<techLevel>Spacer</techLevel>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE" Inherit="False">
+				<verbClass>CombatExtended.Verb_ShootMortarCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_127mmJFGM_HEAT</defaultProjectile>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<minRange>5</minRange>
+                <warmupTime>3</warmupTime>
+				<forcedMissRadius>0</forcedMissRadius>
+                <range>100</range>
+				<requireLineOfSight>true</requireLineOfSight>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <noiseRadius>8</noiseRadius>
+                <soundCast>USCM_shotM5</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+				<onlyManualCast>true</onlyManualCast>
+				<!--<indirectFirePenalty>0.1</indirectFirePenalty>-->
+				<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+            </li>
+        </verbs>
+        <comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>6</reloadTime>
+                <ammoSet>AmmoSet_JFGM</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.4</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Launcher_Component>1</Launcher_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+			<Plastic>5</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- M320(K) Grenade Launcher -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>Pa_M320K</defName>
+        <label>M320(K) Grenade Launcher</label>
+        <description>An ancient compact launcher, safe, light, compact and very easy to use compared to any launcher of its age, it does have a downside, its effective range suffer way more than any conventional grenade launcher.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Launchers/M320K</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.12</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>0.85</RangedWeapon_Cooldown>
+            <Bulk>3.3</Bulk>
+            <Mass>1.5</Mass>
+        </statBases>
+        <weaponTags>
+            <li>GLT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+		<generateCommonality>0.6</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>0.48</circularError>
+                <range>36</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>RF_ShotMilkorMGL</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.5</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Heavy_Component>1</Heavy_Component>
+            <Weapon_Parts>1</Weapon_Parts>
+			<Plastic>6</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- HK69 Grenade Launcher -->
+    <ThingDef ParentName="BaseGun_Heavy">
+        <defName>PaWT_HK69GL</defName>
+        <label>HK69 Grenade Launcher</label>
+        <description>An ancient grenade launcher, used by law enforcement and military as standard granade launcher of new era of modern rifle family or just a standalone grenade launcher.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Launchers/HK69GL</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1350</MarketValue>
+            <SightsEfficiency>1.12</SightsEfficiency>
+            <ShotSpread>0.1</ShotSpread>
+            <SwayFactor>1.55</SwayFactor>
+            <RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+            <Bulk>4</Bulk>
+            <Mass>1.5</Mass>
+        </statBases>
+        <weaponTags>
+            <li>RKT1</li>
+            <li>Glaunchers</li>
+            <li>CE_AI_Rifle</li>
+            <li>CE_AI_Launcher</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+		<tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Glaunchers</li>
+        </thingCategories>
+		<generateCommonality>0.4</generateCommonality>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+				<warmupTime>0.91</warmupTime>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<circularError>0.4</circularError>
+                <range>46</range>
+				<targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <soundCast>RF_ShotMilkorMGL</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2</reloadTime>
+                <ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.5</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Launcher_Component>1</Launcher_Component>
+			<ComponentIndustrial>2</ComponentIndustrial>
+            <Weapon_Parts>2</Weapon_Parts>
+			<Plastic>2</Plastic>
         </smeltProducts>
     </ThingDef>
 

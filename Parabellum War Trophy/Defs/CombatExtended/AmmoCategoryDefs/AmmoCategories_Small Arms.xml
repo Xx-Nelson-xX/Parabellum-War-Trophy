@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- =============== .30 Carabine =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>30CFMJ</defName>
+		<label>.30 Carabine FMJ</label>
+		<labelShort>.30C FMJ</labelShort>
+		<description>Standard Full Metal Jacket ammo, more powerful tan pistol round but not enought to be an intermediate catridge.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>30CHP</defName>
+		<label>.30 Carabine HP</label>
+		<labelShort>.30C HP</labelShort>
+		<description>Hollow Point ammo, improved damage counter soft target with less armor penetration.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<!-- =============== .45-70 Government =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>4570FMJ</defName>
+		<label>.45-70 Govt FMJ</label>
+		<labelShort>.45-70G FMJ</labelShort>
+		<description>Standard Full Metal Jacket/Ball ammo, a black powder round, improvement and a replacement of the previous ammo.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>4570JHP</defName>
+		<label>.45-70 Govt JHP</label>
+		<labelShort>.45-70G JHP</labelShort>
+		<description>Modern Jacket Hollow Point ammo, very powerful round counter soft target but lacks penetration, very effective for Big Game Hunting.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>4570Forage</defName>
+		<label>.45-70 Govt Forage</label>
+		<labelShort>.45-70G F</labelShort>
+		<description>"Forage" ammo, snake shot/rat shot, a hunting round designed to hunt small animals in close range, not very effective counter anything bigger.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<!-- =============== 23x75mm KS-23 Shotgun Shells =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSBS</defName>
+		<label>23mm KS Buckshot</label>
+		<labelShort>23mm BS</labelShort>
+		<description>Large size buckshot round filled with few not-so-small metallic pellets, very lethal for close range combat.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSSlug</defName>
+		<label>23mm KS Slug</label>
+		<labelShort>23mm Slug</labelShort>
+		<description>Large size slug round with single steel core penetrator, can knock out a car engine in medium range.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSStar</defName>
+		<label>23mm KS Star</label>
+		<labelShort>23mm Star</labelShort>
+		<description>Large size flashbang round, a less-than-lethal round, not very effective beyond close range.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSEBS</defName>
+		<label>23mm KS Explosive</label>
+		<labelShort>23mm EBS</labelShort>
+		<description>Large size buckshot round filled with few explosive pellets, very lethal for close range combat and effective for breaching.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSBB</defName>
+		<label>23mm KS BeanBag</label>
+		<labelShort>23mm BB</labelShort>
+		<description>Large size beanbag round with single rubber/plastic projectile, a less-than-lethal round, not very effective counter armored target.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
+	<CombatExtended.AmmoCategoryDef>
+		<defName>23mmKSEEMP</defName>
+		<label>23mm KS Explosive EMP</label>
+		<labelShort>23mm EEMP</labelShort>
+		<description>Large size electro-slug round with mini EMP core, cause small EMP blast and stun/paralize any mechanical part.</description>
+	</CombatExtended.AmmoCategoryDef>
+  
+ </Defs>

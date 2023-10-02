@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	<!-- =============== 127mm Javelin FGM =============== -->
+	<CombatExtended.AmmoCategoryDef>
+		<defName>127mmJFGM</defName>
+		<label>127mm Javelin FGM</label>
+		<labelShort>127mm JFGM</labelShort>
+		<description>127mm Javelin Fire-and-Forget Guided Missile, efficient for both bunker and tank busting, very deadly and accurate medium missile.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
 	<!-- =============== 50mm Type 89 shells/grenades =============== -->
 	<CombatExtended.AmmoCategoryDef>
 		<defName>50mmGDHE</defName>
@@ -43,21 +51,6 @@
 		<label>20mm FFMR HEI</label>
 		<labelShort>20mm FFHEI</labelShort>
 		<description>20mm Fliegerfaust High Explosive-Incendiary mini rocket, cause small explosive blast, detonate a small incendiary sub-munition after impact, very effective counter flammable target.</description>
-	</CombatExtended.AmmoCategoryDef>
-	
-	<!-- =============== .30 Carabine =============== -->
-	<CombatExtended.AmmoCategoryDef>
-		<defName>30CFMJ</defName>
-		<label>.30 Carabine FMJ</label>
-		<labelShort>.30C FMJ</labelShort>
-		<description>Standard Full Metal Jacket ammo, more powerful tan pistol round but not enought to be an intermediate catridge.</description>
-	</CombatExtended.AmmoCategoryDef>
-	
-	<CombatExtended.AmmoCategoryDef>
-		<defName>30CHP</defName>
-		<label>.30 Carabine HP</label>
-		<labelShort>.30C HP</labelShort>
-		<description>Hollow Point ammo, improved damage counter soft target with less armor penetration.</description>
 	</CombatExtended.AmmoCategoryDef>
   
  </Defs>

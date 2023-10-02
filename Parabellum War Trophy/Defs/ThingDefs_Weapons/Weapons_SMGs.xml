@@ -1,0 +1,68 @@
+<Defs>
+
+    <!-- MP 40/I -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_MP40I</defName>
+        <label>MP 40/I</label>
+        <description>A modified MP 40 designed for special operations troops to compensate the low ammo capacity the standard MP 40 has compared to their enemy's large capacity drum magazine during its era.</description>
+        <graphicData>
+            <texPath>Things/Weapons/SMGs/MP40I</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>600</MarketValue>
+            <SightsEfficiency>0.95</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.35</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>5.1</Bulk>
+            <Mass>4</Mass>
+        </statBases>
+		<generateCommonality>0.6</generateCommonality>
+        <weaponTags>
+            <li>SMG1</li>
+            <li>Gun</li>
+            <li>TierOneSMG</li>
+			<li>TierTwoSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilPattern>Regular</recoilPattern>
+                <recoilAmount>1.15</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <burstShotCount>16</burstShotCount>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <warmupTime>0.46</warmupTime>
+                <range>30</range>
+                <soundCast>Shot_MP40I</soundCast>
+                <soundCastTail>GunTail_Light</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>4</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>32</magazineSize>
+                <reloadTime>1.2</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+        </comps>
+        <smeltProducts>
+            <SMG_Component>1</SMG_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

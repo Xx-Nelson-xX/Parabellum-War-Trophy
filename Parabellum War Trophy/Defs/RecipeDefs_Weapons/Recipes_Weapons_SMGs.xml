@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- MP 40/I -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMP40I</defName>
+		<label>Build the MP 40/I SMG</label>
+		<description>The MP 40/I, reliability is matter of how much overengineering you want.\nCaliber: 9x19mm Para</description>
+		<jobString>Building a Thompson M1928A1.</jobString>
+		<workAmount>14200</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>14</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_MP40I>1</PaWT_MP40I>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

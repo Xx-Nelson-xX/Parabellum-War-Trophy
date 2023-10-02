@@ -4,7 +4,7 @@
 	<ThingCategoryDef>
 		<defName>AmmoFFMR</defName>
 		<label>Fliegerfaust Mini Rockets</label>
-		<parent>AmmoShells</parent>
+		<parent>AmmoRockets</parent>
 		<iconPath>Things/Ammo/FF/HE/HE_b</iconPath>
 	</ThingCategoryDef>
 	
@@ -223,7 +223,7 @@
 						<li>USLDBar</li>
 					</categories>
 				</filter>
-				<count>50</count>
+				<count>40</count>
 			</li>
 			<li>
 				<filter>
@@ -231,7 +231,7 @@
 						<li>HeavyBar</li>
 					</categories>
 				</filter>
-				<count>6</count>
+				<count>5</count>
 			</li>
 			<li>
 				<filter>
@@ -249,7 +249,7 @@
 						<li>Napalm</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>6</count>
 			</li>
 			<li>
 				<filter>
@@ -257,7 +257,7 @@
 						<li>Chemfuel</li>
 					</thingDefs>
 				</filter>
-				<count>8</count>
+				<count>6</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>

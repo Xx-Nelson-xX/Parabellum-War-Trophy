@@ -3,7 +3,7 @@
 	
 	<!-- Ballistic Knife -->
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseWeaponAndAmmoNeolithic">
-		<defName>Pa_BK</defName>
+		<defName>PaWT_BK</defName>
 		<label>Ballistic Knife</label>
 		<description>A spring powered single shot ballistic knife, not very good for slashing but the design is effective for stabbing and pierce, and the spring ejection mechanism can extend the reach of the weapon considerably.</description>
 		<graphicData>

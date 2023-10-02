@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- KS-23 -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_KS23L</defName>
+        <label>KS-23 "Special Carbine"</label>
+        <description>The KS-23 Special Shotgun is a soviet pump action shotgun used mainly by Prison Guards and Riot Police, KS stands for Karabin Spetsialniy, "Special Carbine" due having a rifled barrel. It is renowned for its large caliber, 23mm gun barrel made from AA guns, capable to fire a 23 mm round, equating to 6.27 gauge using the British and American standards of shotgun gauges and approximately 4 gauge using the current European standards.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/KS23</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>1200</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.45</SwayFactor>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <Bulk>12.6</Bulk>
+            <Mass>3.85</Mass>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <weaponTags>
+            <li>Gun</li>
+			<li>ST2</li>
+			<li>ST3</li>
+            <li>TierTwoSMG</li>
+			<li>TierTwoRifle</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_23mmKS_Buck</defaultProjectile>
+                <warmupTime>0.66</warmupTime>
+                <range>30</range>
+                <soundCast>MFire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>4</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+                <reloadTime>0.9</reloadTime>
+                <ammoSet>AmmoSet_23mmKS</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>4</Weapon_Parts>
+			<Plastic>4</Plastic>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- KS-23K -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_KS23K</defName>
+        <label>KS-23K "Special Carbine"</label>
+        <description>Unlike the original design, the KS-23K is a redesigned KS-23 that features a bullpup layout. The KS-23K was accepted in 1998 for the use of the Russian Ministry of Internal Affairs (MVD). Development and adoption of this carbine was motivated by the fact that in the earlier accepted configurations of the KS-23 and KS-23M a major noted deficiency was that the tubular magazine did not make it possible to rapidly reload or change the type of ammunition being used, because of this a major design change for the KS-23K is that it has an extended box magazine that holds seven shells instead of the three shells seen on the other models. The gun has a mechanical safety located on the left side, above the pistol handle and open non adjustable sights.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/KS23K</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1400</MarketValue>
+            <SightsEfficiency>1.08</SightsEfficiency>
+            <ShotSpread>0.16</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+            <Bulk>9</Bulk>
+            <Mass>4</Mass>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <weaponTags>
+            <li>Gun</li>
+			<li>ST3</li>
+            <li>TierTwoSMG</li>
+			<li>TierTwoRifle</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_23mmKS_Buck</defaultProjectile>
+                <warmupTime>0.58</warmupTime>
+                <range>27</range>
+                <soundCast>MFire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>7</magazineSize>
+                <reloadTime>3.4</reloadTime>
+                <ammoSet>AmmoSet_23mmKS</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.2</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>6</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- Heavy Automatic Shotgun "Abzats" -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_Abzats</defName>
+        <label>Abzats HAS</label>
+        <description>The Heavy Automatic Shotgun, or "Abzats", is a makeshift Shotgun, It resembles (and is derived from) a cut-down DShK 12.7mm machine gun, re-chambered and re-bored for shotgun shells, and completely redesigned to be wielded by one user. The weapon itself had problems. Like its machine gun parent, it is very heavy, weighing more than twenty pounds despite steps taken to reduce its weight.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Shotguns/Abzats</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+		<equippedAngleOffset>45</equippedAngleOffset>
+        <statBases>
+            <MarketValue>3200</MarketValue>
+            <SightsEfficiency>1.1</SightsEfficiency>
+            <ShotSpread>0.05</ShotSpread>
+            <SwayFactor>1.6</SwayFactor>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+            <Bulk>16.4</Bulk>
+            <Mass>11</Mass>
+        </statBases>
+        <tradeTags>
+            <li>Exotic</li>
+        </tradeTags>
+        <thingCategories>
+            <li>Shotguns</li>
+        </thingCategories>
+        <weaponTags>
+			<li>ST3</li>
+			<li>MG3</li>
+            <li>AdvancedGun</li>
+			<li>GunHeavy</li>
+            <li>TierTwoAdvanced</li>
+			<li>CE_AI_Suppressive</li>
+			<li>CE_AI_AssaultWeapon</li>
+        </weaponTags>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.62</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <warmupTime>1.12</warmupTime>
+                <range>45</range>
+                <soundCast>MAFire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>10</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiUseBurstMode>true</aiUseBurstMode>
+                <aiAimMode>AimedShot</aiAimMode>
+                <aimedBurstShotCount>4</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>50</magazineSize>
+                <reloadTime>6.2</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.3</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Heavy_Component>1</Heavy_Component>
+            <Shotgun_Component>1</Shotgun_Component>
+            <Weapon_Parts>10</Weapon_Parts>
+			<Plasteel>46</Plasteel>
+        </smeltProducts>
+    </ThingDef>
+	
+</Defs>

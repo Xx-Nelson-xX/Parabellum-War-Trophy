@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Magnum Research BFR -->
+	<ThingDef ParentName="BaseGun_ShortBarreled">
+		<defName>PaWT_BFR</defName>
+		<label>BFR</label>
+		<description>Magnum Research "Big Frame Revolver". A handcannon, practically an upscale revolver, modelled after the Colt Single Action Army, to chamber very powerful pistol round and even rifle round, the revolver design, cylinder and barrel cuztomization making it possible to achieve such capability, a viable weapon for Big Game Hunting.</description>
+		<graphicData>
+			<texPath>Things/Weapons/Pistols/BFR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.85</drawSize>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<SightsEfficiency>1.2</SightsEfficiency>
+			<ShotSpread>0.09</ShotSpread>
+			<SwayFactor>1.1</SwayFactor>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+			<Bulk>2.2</Bulk>
+			<Mass>2.4</Mass>
+		</statBases>
+		<generateCommonality>0.4</generateCommonality>
+		<weaponTags>
+			<li>PT2</li>
+			<li>Gun</li>
+			<li>AdvancedGun</li>
+			<li>TierTwoPistol</li>
+			<li>CE_Sidearm</li>
+			<li>CE_AI_Pistol</li>
+			<li>CE_OneHandedWeapon</li>
+		</weaponTags>
+		<thingCategories>
+			<li>Pistols</li>
+		</thingCategories>
+		<verbs>
+			<li Class="CombatExtended.VerbPropertiesCE">
+				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_4570Govt_JHP</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>34</range>
+				<soundCast>ShotDesertEagle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireModes">
+				<aiAimMode>AimedShot</aiAimMode>
+			</li>
+			<li Class="CombatExtended.CompProperties_AmmoUser">
+				<magazineSize>5</magazineSize>
+				<reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.7</reloadTime>
+				<ammoSet>AmmoSet_LSHR</ammoSet>
+			</li>
+		</comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>0.85</DrawSize>
+		  </li>
+		</modExtensions>
+		<smeltProducts>
+			<Heavy_Component>1</Heavy_Component>
+			<Pistol_Component>1</Pistol_Component>
+			<ComponentIndustrial>6</ComponentIndustrial>
+			<Rubber>2</Rubber>
+		</smeltProducts>
+	</ThingDef>
+
+</Defs>

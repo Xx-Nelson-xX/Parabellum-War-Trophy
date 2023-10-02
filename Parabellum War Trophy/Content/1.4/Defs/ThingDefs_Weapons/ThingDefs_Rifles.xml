@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- M30 Luftwaffe Drilling(Replica) -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_M30LDR</defName>
+        <label>M30 Luftwaffe Drilling(R)</label>
+        <description>The M30 Luftwaffe Drilling was a survival weapon issued to Luftwaffe pilots, comes with 2 barrels for 12 gauge shotgun shells and 1 rifle barrel, but instead of 9.3x74mmR, it use the more common .45-70 Government round which also pack quite a punch.</description>
+        <graphicData>
+            <texPath>Things/Weapons/Rifles/M30LDR</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.1</drawSize>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>620</MarketValue>
+            <SightsEfficiency>1.15</SightsEfficiency>
+            <ShotSpread>0.09</ShotSpread>
+            <SwayFactor>1.1</SwayFactor>
+            <RangedWeapon_Cooldown>1.12</RangedWeapon_Cooldown>
+            <Bulk>8.2</Bulk>
+            <Mass>3.4</Mass>
+        </statBases>
+		<generateCommonality>0.2</generateCommonality>
+        <weaponTags>
+            <li>RF1</li>
+			<li>RF2</li>
+			<li>ST1</li>
+			<li>ST2</li>
+            <li>Gun</li>
+            <li>SniperRifle</li>
+            <li>TierOneRifle</li>
+            <li>TierTwoPistol</li>
+			<li>CE_AI_AssaultWeapon</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
+                <warmupTime>0.32</warmupTime>
+                <range>22</range>
+                <soundCast>Shot_CAWS</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+		<comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>2</magazineSize>
+                <reloadOneAtATime>true</reloadOneAtATime>
+				<reloadTime>0.7</reloadTime>
+                <ammoSet>AmmoSet_12Gauge</ammoSet>
+            </li>
+			<li Class="CombatExtended.CompProperties_UnderBarrel">
+				<propsUnderBarrel>
+					<magazineSize>1</magazineSize>
+					<reloadTime>0.9</reloadTime>
+					<ammoSet>AmmoSet_4570Govt</ammoSet>
+				</propsUnderBarrel>
+				<verbPropsUnderBarrel>
+					<recoilAmount>1.82</recoilAmount>
+					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+					<defaultProjectile>Bullet_4570Govt_JHP</defaultProjectile>
+					<warmupTime>0.7</warmupTime>
+					<range>50</range>
+					<soundCast>ShotDesertEagle</soundCast>
+					<soundCastTail>GunTail_Heavy</soundCastTail>
+					<muzzleFlashScale>14</muzzleFlashScale>
+					<hasStandardCommand>true</hasStandardCommand>
+				</verbPropsUnderBarrel>
+				<propsFireModesUnderBarrel>
+					<aiAimMode>AimedShot</aiAimMode>
+				</propsFireModesUnderBarrel>
+			</li>  
+        </comps>
+		<modExtensions>
+		  <li Class="CombatExtended.GunDrawExtension">
+			<DrawSize>1.1</DrawSize>
+		  </li>
+		</modExtensions>
+        <smeltProducts>
+			<Weapon_Parts>1</Weapon_Parts>
+			<Plasteel>2</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+        </smeltProducts>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- G3 Base -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_G3c</defName>
+        <label>HK G3 Custom</label>
+        <description>The Heckler Koch Gewehr 3 Battle rifle, is a selective-fire automatic weapon that employs a roller-delayed blowback operating system, successor of CETME rifle and StG 45(Mauser). Rifle caliber, very accurate and somewhat controllable.</description>
+        <graphicData>
+            <texPath>Things/Weapons/G3Family/PaWT_HKRB_Rc</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <statBases>
+            <MarketValue>1050</MarketValue>
+            <SightsEfficiency>1.2</SightsEfficiency>
+            <ShotSpread>0.038</ShotSpread>
+            <SwayFactor>1.0</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>4.385</Bulk>
+            <Mass>2.27</Mass>
+        </statBases>
+		<generateCommonality>0.45</generateCommonality>
+        <weaponTags>
+			<li>RF4</li>
+            <li>AdvancedGun</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>TierThreeRifle</li>
+            <li>CE_AI_Rifle</li>
+        </weaponTags>
+        <thingCategories>
+            <li>Rifles</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.64</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_762x51mmNATO_FMJ</defaultProjectile>
+                <warmupTime>0.48</warmupTime>
+                <range>30</range>
+				<burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <soundCast>ShotAUG</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2.5</reloadTime>
+                <ammoSet>AmmoSet_762x51mmNATO</ammoSet>
+            </li>
+			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+				<TextureSizeFactor>320</TextureSizeFactor>
+				<TextureFilterMode>Point</TextureFilterMode>
+				<ExceedanceFactor>2</ExceedanceFactor>
+				<ExceedanceOffset>1</ExceedanceOffset>
+				<ForceNodeIdControl>true</ForceNodeIdControl>
+			</li>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<!--<verbPropertiesObjectPatchByOtherPart Default="true"/>-->
+				<attachmentProperties>
+					<li>
+						<id>ModHKG3c_Sight</id>
+						<name>sight</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+						<postion>(0.0435,0.1,0.003495)</postion>
+						<scale>(0.8,0,0.8)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_ACOG</li>
+								<li>Module_HoloSight</li>
+								<li>Module_RedDotSight</li>
+								<li>Module_SniperScope</li>
+								<li>Module_AdvSniperScope</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModHKG3c_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(0,-0.1,0)</postion>
+						<scale>(1,0,1)</scale>
+						<defultThing>Module_HKG320rnd</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_HKG320rnd</li>
+								<li>Module_HKG350rnd</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModHKG3c_Barrel</id>
+						<name>barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel</UITexPath>
+						<!--<compPropertiesObjectPatchByChildPart  Default="false" />-->
+						<postion>(0.3165,0.1,0)</postion>
+						<defultThing>Module_18inchG3B</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_5inchG3B</li>
+								<li>Module_9inchG3B</li>
+								<li>Module_13inchG3B</li>
+								<li>Module_13inchSDG3B</li>
+								<li>Module_18inchG3B</li>
+								<li>Module_24inchG3B</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModHKG3c_Stock</id>
+						<name>stock</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
+						<postion>(-0.05055,0.1,0)</postion>
+						<defultThing>Module_G3Sc</defultThing>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_G3Sa</li>
+								<li>Module_G3Sb</li>
+								<li>Module_G3Sc</li>
+								<li>Module_G3Sd</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModHKG3c_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="true" />
+						<postion>(0.0171,1,0)</postion>
+						<scale>(1,0,1)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>
+								<li>PaWT_HK69GL</li>
+								<li>Pa_M320K</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+        </comps>
+        <smeltProducts>
+			<Rifle_Component>1</Rifle_Component>
+            <Weapon_Parts>5</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- HK G3 Custom BR -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildHKG3c</defName>
+		<label>Build a HK G3 Custom</label>
+		<description>Build a HK G3 Custom, great weapon born with obsolete doctrine.\nCaliber: 7.62x51mm NATO</description>
+		<jobString>Building HK G3 Custom.</jobString>
+		<workAmount>12000</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvRifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>46</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_G3c>1</PaWT_G3c>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvRifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C3</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

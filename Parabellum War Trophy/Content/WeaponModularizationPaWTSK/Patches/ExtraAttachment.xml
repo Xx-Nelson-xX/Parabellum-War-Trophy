@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pa_M320K"]/comps</xpath>
+			<value>
+				<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+					<TextureSizeFactor>320</TextureSizeFactor>
+					<TextureFilterMode>Point</TextureFilterMode>
+				</li>
+				<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+					<PartTexPath>Things/WeaponPart/Misc/M320UBGL</PartTexPath>
+				</li>
+			</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="PaWT_HK69GL"]/comps</xpath>
+			<value>
+				<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+					<TextureSizeFactor>320</TextureSizeFactor>
+					<TextureFilterMode>Point</TextureFilterMode>
+				</li>
+				<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+					<PartTexPath>Things/WeaponPart/Misc/HK79UBGLK</PartTexPath>
+				</li>
+			</value>
+	</Operation>
+
+</Patch>

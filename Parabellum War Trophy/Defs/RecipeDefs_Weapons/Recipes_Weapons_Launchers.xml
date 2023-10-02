@@ -54,7 +54,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_Type89GD>1</Pa_Type89GD>
+			<PaWT_Type89GD>1</PaWT_Type89GD>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -120,7 +120,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_FFB>1</Pa_FFB>
+			<PaWT_FFB>1</PaWT_FFB>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -138,6 +138,248 @@
 			<li>AdvWeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>Parabellum_I</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== Fliegerfaust B =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_FGM148J</defName>
+		<label>Build a FGM-148 Javelin</label>
+		<description>Builds the FGM-148 Javelin Fire-and-Forget Guided Missile launcher, Death from above, literally.\nCaliber: 127mm Javelin FGM</description>
+		<jobString>Building FGM-148 Javelin.</jobString>
+		<workAmount>25000</workAmount>
+		<skillRequirements>
+			<Crafting>16</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Launcher_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElectronicComponents</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>24</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Glass</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_FGM148J>1</PaWT_FGM148J>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Launcher_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>ElectronicComponents</li>
+				<li>Rubber</li>
+				<li>Plastic</li>
+				<li>Glass</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Rockets_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== M320(K) Grenade Launcher =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_M320K</defName>
+		<label>Build M320(K) Grenade Launcher</label>
+		<description>Builds the M320(K) Grenade Launcher,good for CQC, keep a safe distance, you won't like 40mm grenade blast your face off.\nCaliber: 40x46mm Grenade</description>
+		<jobString>Building M320(K) GL.</jobString>
+		<workAmount>11500</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pa_M320K>1</Pa_M320K>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Grenade_launchers_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- =============== HK69 Grenade Launcher =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>Build_HK69GL</defName>
+		<label>Build HK69 Grenade Launcher</label>
+		<description>Builds the HK69 Grenade Launcher, NICE.\nCaliber: 40x46mm Grenade</description>
+		<jobString>Building HK69 GL.</jobString>
+		<workAmount>13500</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Launcher_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_HK69GL>1</PaWT_HK69GL>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Launcher_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Grenade_launchers_C2</researchPrerequisite>
 	</RecipeDef>
 
 </Defs>

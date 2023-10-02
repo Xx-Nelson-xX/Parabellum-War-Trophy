@@ -61,6 +61,7 @@
 			<MarketValue>1.24</MarketValue>
 		</statBases>
 		<ammoClass>30CHP</ammoClass>
+		<generateAllowChance>0.5</generateAllowChance>
 		<cookOffProjectile>Bullet_30Carabine_HP</cookOffProjectile>
 	</ThingDef>
 	
@@ -74,7 +75,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
 			<dropsCasings>true</dropsCasings>
-			<speed>130</speed><!-- 610m/s -->
+			<speed>122</speed><!-- 610m/s -->
 		</projectile>
 	</ThingDef>
 
@@ -92,7 +93,7 @@
 		<defName>Bullet_30Carabine_HP</defName>
 		<label>.30 Carabine bullet(HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>19</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationSharp>5.8</armorPenetrationSharp>
 			<armorPenetrationBlunt>42.4</armorPenetrationBlunt>
 		</projectile>
@@ -153,7 +154,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>Gunsmithing</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef ParentName="AmmoRecipeRifle">
@@ -209,7 +210,7 @@
 		</skillRequirements>
 		<workSkill>Crafting</workSkill>
 		<workSkillLearnFactor>0.8</workSkillLearnFactor>
-		<researchPrerequisite>Rifles_C1</researchPrerequisite>
+		<researchPrerequisite>Gunsmithing</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>

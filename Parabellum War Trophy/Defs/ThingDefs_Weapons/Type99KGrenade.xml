@@ -43,7 +43,7 @@
 	
 	<!-- The Grenade as Ammo and Weapon -->
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGrenadeEquipment">
-		<defName>Pa_GrenadeType99K</defName>
+		<defName>PaWT_GrenadeType99K</defName>
 		<equipmentType>Primary</equipmentType>
 		<label>Type 99(Kai) Frag Grenade</label>
 		<description>Modified version of Type 99 "Kiska" Hand Grenade, with pineapple fragmentation coat like the Type 97 and Type 91 Frag Grenade to improve its Anti-personnel capability, overall performance is still weaker than average fragmentation grenade with the reduced size and explosion charge, but is very light and small to carry around.</description>
@@ -112,7 +112,7 @@
 	<!-- ==================== Booby Trap(Grenade) ========================== -->
 	
 	<ThingDef ParentName="SK_TrapIEDBase">
-		<defName>Pa_Trap_Type99K</defName>
+		<defName>PaWT_Trap_Type99K</defName>
 		<label>Type 99(Kai) Booby Trap</label>
 		<description>A very simple booby trap made with this type of grenade, simple, lethal and very cheap, require target step on it to trigger the delay fuse.</description>
 		<graphicData>
@@ -126,7 +126,7 @@
 		</stuffCategories>
 		<costStuffCount>1</costStuffCount>
 		<costList>
-			<Pa_GrenadeType99K>1</Pa_GrenadeType99K>
+			<PaWT_GrenadeType99K>1</PaWT_GrenadeType99K>
 		</costList>
 		<comps>
 			<li Class="CompProperties_Explosive">
@@ -205,7 +205,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Pa_GrenadeType99K>10</Pa_GrenadeType99K>
+            <PaWT_GrenadeType99K>10</PaWT_GrenadeType99K>
         </products>
         <recipeUsers>
             <li>WeaponCraftingWorkTable</li>

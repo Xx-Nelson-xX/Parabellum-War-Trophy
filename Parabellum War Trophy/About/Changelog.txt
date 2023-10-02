@@ -1,12 +1,52 @@
+<--------------------------------------- 1.1 -------------------------------------------->
+								Parabellum War Trophy
+								
+1.1 - 5 weapons and 4 New Ammo Type
+
+Pistols:
+-Magnum Research BFR: Large hunting round, Single Action, A handcannon, practically an upscale revolver, modelled after the Colt Single Action Army, to chamber very powerful pistol rounds and even rifle rounds 
+
+SMGs:
+-MP40/I: 9x19mm Parabellum, Automatic, A modified MP 40 designed for special operations troops to compensate the low ammo capacity the standard MP 40 has compared to their enemy's large capacity drum magazine during its era. 
+
+Carabines:
+-Marlin 1895: .45-70 Government, Level Action, a modified Marlin 1894 chambered in powerful .45-70 Government round, very effective for hunting
+-Micro Galil ACE 21 Hybrid: 5.56x45mm/5.45x39mm/7.62x39mm, Automatic(1/5/13), The IWI Galil "ACE" series is based upon the original design of the IMI Galil, but instead utilizes a modern design to increase its accuracy and lower its weight, while maintaining the original Galil's ergonomics
+
+Rifles:
+-(1.4)M30 Luftwaffe Drilling(Replica): Single Shot, Break Action, was a survival weapon issued to Luftwaffe pilots, comes with 2 barrels for 12 gauge shotgun shells and 1 rifle barrel, but instead of 9.3x74mmR, it use the more common .45-70 Government round which also pack quite a punch.
+
+Launchers:
+-FGM-148 Javelin: 127mm FGM, Single Shot, a portable anti-tank missile system. Its fire-and-forget design uses automatic infrared guidance that allows the user to seek cover immediately after launch, in contrast to wire-guided systems. The Javelin's high explosive anti-tank (HEAT) warhead can defeat modern tanks by top attack, hitting them from above, where their armor is thinnest, and is also useful against fortifications in a direct attack flight.
+
+Ammo:
+-.45-70 Govt FMJ: Standard Full Metal Jacket/Ball ammo, a black powder round, improvement and a replacement of the previous ammo
+-.45-70 Govt JHP: Modern Jacket Hollow Point ammo, very powerful round counter soft target but lacks penetration, very effective for Big Game Hunting
+-.45-70 Govt Forage:"Forage" ammo, snake shot/rat shot, a hunting round designed to hunt small animals in close range, not very effective counter anything bigger
+-127mm FGM: Fire-and-Forget Guided Missile for FGM-148 Javelin, can lock on any target marked by laser designator, either from CLU or any 3rd party laser designator for pin point bunker/tank busting
+
+Tweaks/Fixes:
+- Moved Fliegerfaust rocket to rocket category in storage
+
 <--------------------------------------- 1.0 -------------------------------------------->
 								Parabellum War Trophy
 								
-1.0 - 3 weapons and 2(3) New Ammo Type
+1.0 - 14 weapons, 1 Bobby Trap and 13(14) New Ammo Type
+
+Melee:
+-Ballistic Knife: spring powered single shot ballistic knife, good for stabbing and poking, and shooting at small size pawn as last resort, a niche weapon, but neverthelss, lethal one
+
+Shotguns:
+-KS-23 "Special Carbine": 23x75mm KS shells, Pump Action, large size shotgun designed for RIOT control, with rifled barrel made from AA guns
+-KS-23K "Special Carbine": 23x75mm KS shells, Pump Action, bullpup redesign of the original version, mag-fed, and a more compact package
+-"Abzats" HAS: 12 Gauge, Automatic(1/4/10), modified DShk to chamber 12 Gauge shotgun shell with lots of weight reduction
 
 Carabines:
 -XM16E1 FPW: 5.56x45mm NATO, Automatic(1/10/25), Modified XM16E1/M16A1 into pistol size, high RoF, very inaccurate, light weight, compact size with large magazine, single hand weapon
 -HK51k: 7.62x51mm NATO, Automatic(1/3/7), Modified HK51/G3A3K, decent RoF, subpar stability, light weight and compact size Battle Rifle in PDW convertion
 -M1A1.30 PDW: .30 Carabine, Automatic(1/4/10), PDW convertion of the M1A1 Thompson, short range, subpar accuracy and light weight, single hand weapon
+-M1A1 Carabine: .30 Carabine, Semi-Automatic, a short light weight carabine designed for non-front line soldier initially, due the effectiveness of the weapon, it also modified to fit the airborner/paratroopers
+-M2 Carabine: .30 Carabine, Automatic(1/5/11), due the troop demands, the defensive role changed, the new modification allow the weapon capable for assault role, specially in urban combat and jungle
 
 Machineguns:
 -HK21E(K): 7.62x51mm NATO, Automatic(1/7/17), Compact version of the HK21E, high RoF, innacurate, light weight(compared to other LMG), compact size with large magazine
@@ -19,8 +59,20 @@ Launchers:
 Grenades:
 -Type 99(Kai) Frag Grenade: a modified/improved version of the original grenade, its performance is weaker than average fragmentation grenade with the reduced size and explosion charge, but is very light and small to carry around, the grenade can be used as ammo for the Type 89 Grenade Discharger
 
+Trap/Mines:
+-Type 99(Kai) Frag Grenade bobby trap: a very simple grenade trip mine like bobby trap, require something pressing the fuse cap to activate it
+
 Ammo:
 -50mm Type 89 HE shell: High Explosive, standard ammo type for Type 89 Grenade Discharger, practically a small size mortar round with impact fuse
 -50mm Type 89 Incendiary shell: Incendiary,  small size incendiary shell, excellent counter any flammable structure
+-50mm Type 95 Smoke shell: Smoke,  small size smoke shell, create a small smoke cloud after impact
 -20mm FFHE mini-rocket: High Explosive, standard mini-rockets for the Fliegerfaust, cause small explosive blast with small amount of fragments
--20mm FFHEI mini-rocket: High Explosive-Incendiary, modified mini-rockets for the Fliegerfaust, cause small explosive blast and ignite any flammable target withing the blast radius 
+-20mm FFHEI mini-rocket: High Explosive-Incendiary, modified mini-rockets for the Fliegerfaust, cause small explosive blast and ignite any flammable target withing the blast radius
+-23x75mm KS BS(Шрапнель-25): Buckshot, large size shotgun shell filled with not-so-small metallic pellets, effective counter masses
+-23x75mm KS Slug(Баррикада): Slug, large size shotgun slug shot, capable to stop a car by hitting the engine from medium range
+-23x75mm KS Flashbang(Звезда): Flashbang, Special shotgun shell, capable to stun/incapacitate living pawns in front of the barrel at close range
+-23x75mm KS EBS: Explosive Buckshot, Special shotgun shell, instead of metallic pellets, it is filled with explosive pellets for more efficient room breaching
+-23x75mm KS BB(Стрела-3): Beanbags, Special shotgun shell, filled with single plastic/rubber round, very effective counter soft target as less-than-lethal round,but is very lethal counter anything smaller than adult human size
+-23x75mm KS EEMP: Explosive EMP, Special shotgun shell, filled with a single Explosive EMP slug, very effective counter machines and cause small EMP explosion after impact
+-.30 Carabine FMJ: Full Metal Jacket, standard ammo for the M1 Carabine and its variants
+-.30 Carabine HP: Hollow Point, custom made expansive ammo, less penetration capability but more effective counter soft target

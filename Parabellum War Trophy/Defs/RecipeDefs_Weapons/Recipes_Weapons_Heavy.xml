@@ -54,7 +54,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_HK21EK>1</Pa_HK21EK>
+			<PaWT_HK21EK>1</PaWT_HK21EK>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -127,7 +127,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_HK25K>1</Pa_HK25K>
+			<PaWT_HK25K>1</PaWT_HK25K>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>

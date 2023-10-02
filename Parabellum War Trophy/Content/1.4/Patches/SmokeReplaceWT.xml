@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef[defName="Bullet_50mmGDShell_Smoke"]/comps</xpath>
+		<value>
+			<comps>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+					<explosiveRadius>5.0</explosiveRadius>
+					<explosiveDamageType>Smoke</explosiveDamageType>
+					<postExplosionGasType>BlindSmoke</postExplosionGasType>
+					<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				</li>
+			</comps>
+		</value>
+	</Operation>
+	
+</Patch>

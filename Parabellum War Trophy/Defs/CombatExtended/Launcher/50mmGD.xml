@@ -16,7 +16,7 @@
 		<label>50mm Type 89 shells/grenades</label>
 		<ammoTypes>
 			<Ammo_50mmGDShell_HE>Bullet_50mmGDShell_HE</Ammo_50mmGDShell_HE>
-			<Pa_GrenadeType99K>Bullet_50mmGDShell_Frag</Pa_GrenadeType99K>
+			<PaWT_GrenadeType99K>Bullet_50mmGDShell_Frag</PaWT_GrenadeType99K>
 			<Ammo_50mmGDShell_I>Bullet_50mmGDShell_I</Ammo_50mmGDShell_I>
 			<Ammo_50mmGDShell_Smoke>Bullet_50mmGDShell_Smoke</Ammo_50mmGDShell_Smoke>
 		</ammoTypes>

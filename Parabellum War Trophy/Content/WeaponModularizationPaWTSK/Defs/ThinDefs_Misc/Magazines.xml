@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Magazine-->
+	
+	<!-- AR Magazine-->
+	<!--<ThingDef Name="Module_ARMagazine" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Magazine_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>-->
+
+	<!--9mm Magazine-->
+	<!--30rnd magazine(MP5)-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_MP530rnd</defName>
+		<label>30rnd MP5 magazine</label>
+		<description>Standard double stack 30rnd double feed banana shape magazine.</description>
+		<statBases>
+			<WorkToMake>100</WorkToMake>
+			<MarketValue>20</MarketValue>
+			<Mass>0.227</Mass>
+			<Bulk>0.12</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMGCurved_Magazine</PartTexPath>
+				<statOffset>
+					<Bulk>0.12</Bulk>
+					<MarketValue>20</MarketValue>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.8</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>29</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--100rnd magazine-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_MP5100rnd</defName>
+		<label>100rnd MP5 drum magazine</label>
+		<description>A double stack 100rnd double feed drum magazine.</description>
+		<statBases>
+			<Mass>1.36</Mass>
+			<WorkToMake>250</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<Bulk>1.15</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Gun/HeavySMG/HeavySMG_CartridgeDrum</PartTexPath>
+				<statOffset>
+					<Bulk>1.15</Bulk>
+					<MarketValue>120</MarketValue>
+				</statOffset>
+				<compPropertiesOffseter>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>99</magazineSize>
+					</il>
+				</compPropertiesOffseter>
+				<compPropertiesMultiplier>
+					<il Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</il>
+				</compPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--5.56x45mm Magazine-->
+	<!--30rnd magazine(HK33)-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_HK3330rnd</defName>
+		<label>30rnd HK33 magazine</label>
+		<description>Standard double stack 30rnd double feed magazine for HK33.</description>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<Mass>0.255</Mass>
+			<Bulk>0.22</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/PaWT_HKRB_30rndARM</PartTexPath>
+				<statOffset>
+					<Bulk>0.22</Bulk>
+					<MarketValue>50</MarketValue>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.9</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>29</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--7.62x51mm Magazine-->
+	<!--20rnd magazine(G3)-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_HKG320rnd</defName>
+		<label>20rnd HK G3 magazine</label>
+		<description>Standard double stack 20rnd double feed magazine for HK G3.</description>
+		<statBases>
+			<WorkToMake>200</WorkToMake>
+			<MarketValue>50</MarketValue>
+			<Mass>0.017</Mass>
+			<Bulk>0.25</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/PaWT_HKRB_20rndBRM</PartTexPath>
+				<statOffset>
+					<Bulk>0.25</Bulk>
+					<MarketValue>50</MarketValue>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>0.9</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>19</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--50rnd magazine(G3)-->
+	<ThingDef ParentName="Module_ARMagazine">
+		<defName>Module_HKG350rnd</defName>
+		<label>50rnd HK G3 magazine</label>
+		<description>Double stack 50rnd double feed drum magazine for HK G3.</description>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<MarketValue>150</MarketValue>
+			<Mass>1.077</Mass>
+			<Bulk>0.7</Bulk>
+		</statBases>
+		<costList>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Weapon_Parts>1</Weapon_Parts>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Magazines/PaWT_HKRB_50rndBRM</PartTexPath>
+				<statOffset>
+					<Bulk>0.7</Bulk>
+					<MarketValue>150</MarketValue>
+				</statOffset>
+				<compPropertiesMultiplier>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<reloadTime>1.2</reloadTime>
+					</li>
+				</compPropertiesMultiplier>
+				<compPropertiesOffseter>
+					<li Reader-Class="CombatExtended.CompProperties_AmmoUser">
+						<magazineSize>49</magazineSize>
+					</li>
+				</compPropertiesOffseter>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

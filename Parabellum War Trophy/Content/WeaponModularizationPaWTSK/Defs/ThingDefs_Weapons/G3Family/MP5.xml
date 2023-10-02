@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- MP5 Base -->
+    <ThingDef ParentName="BaseGun_LongBarreled">
+        <defName>PaWT_MP5B</defName>
+        <label>MP5 Custom</label>
+        <description>The MP5/Maschinenpistole 5, a scale down, SMG version of G3, with the same design layout and operating principe, small caliber, compact and very controllable.</description>
+        <graphicData>
+            <texPath>Things/Weapons/G3Family/PaWT_HKRB_Ra</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_SMG</soundInteract>
+        <statBases>
+            <MarketValue>450</MarketValue>
+            <SightsEfficiency>0.8</SightsEfficiency>
+            <ShotSpread>0.14</ShotSpread>
+            <SwayFactor>1.65</SwayFactor>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+            <Bulk>3.6</Bulk>
+            <Mass>1.75</Mass>
+        </statBases>
+		<generateCommonality>0.7</generateCommonality>
+        <weaponTags>
+			<li>SMG2</li>
+            <li>SMG3</li>
+            <li>AdvancedGun</li>
+            <li>TierTwoSMG</li>
+			<li>CE_SMG</li>
+			<li>CE_AI_AssaultWeapon</li>
+			<li>CE_OneHandedWeapon</li>
+        </weaponTags>
+        <thingCategories>
+            <li>SMGs</li>
+        </thingCategories>
+        <verbs>
+            <li Class="CombatExtended.VerbPropertiesCE">
+                <recoilAmount>1.22</recoilAmount>
+                <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_9x19mmPara_FMJ</defaultProjectile>
+                <warmupTime>0.48</warmupTime>
+                <range>22</range>
+				<burstShotCount>4</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+                <soundCast>ShotMP5</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>7</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CombatExtended.CompProperties_FireModes">
+                <aiAimMode>AimedShot</aiAimMode>
+				<aiUseBurstMode>true</aiUseBurstMode>
+				<aimedBurstShotCount>2</aimedBurstShotCount>
+            </li>
+            <li Class="CombatExtended.CompProperties_AmmoUser">
+                <magazineSize>1</magazineSize>
+                <reloadTime>2.3</reloadTime>
+                <ammoSet>AmmoSet_9x19mmPara</ammoSet>
+            </li>
+			<li Class="RW_NodeTree.CompProperties_ChildNodeProccesser">
+				<TextureSizeFactor>320</TextureSizeFactor>
+				<TextureFilterMode>Point</TextureFilterMode>
+				<ExceedanceFactor>2</ExceedanceFactor>
+				<ExceedanceOffset>1</ExceedanceOffset>
+				<ForceNodeIdControl>true</ForceNodeIdControl>
+			</li>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<!--<verbPropertiesObjectPatchByOtherPart Default="true"/>-->
+				<attachmentProperties>
+					<li>
+						<id>ModMP5C_Sight</id>
+						<name>sight</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Scope</UITexPath>
+						<postion>(0.0435,0.1,0.003495)</postion>
+						<scale>(0.8,0,0.8)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_ACOG</li>
+								<li>Module_HoloSight</li>
+								<li>Module_RedDotSight</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModAR_Magazine</id>
+						<name>magazine</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Mag</UITexPath>
+						<postion>(-0.0376,-0.1,0.0135)</postion>
+						<scale>(0.55,0,0.55)</scale>
+						<defultThing>Module_MP530rnd</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_MP530rnd</li>
+								<li>Module_MP5100rnd</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModMP5C_Barrel</id>
+						<name>barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Barrel</UITexPath>
+						<!--<compPropertiesObjectPatchByChildPart  Default="false" />-->
+						<postion>(0.254,0.1,0)</postion>
+						<defultThing>Module_5inchG3B</defultThing>
+						<allowEmpty>false</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_5inchG3B</li>
+								<li>Module_9inchG3B</li>
+								<li>Module_13inchG3B</li>
+								<li>Module_13inchSDG3B</li>
+								<li>Module_18inchG3B</li>
+								<!--<li>Module_24inchG3B</li>-->
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModMP5C_Stock</id>
+						<name>stock</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</UITexPath>
+						<postion>(-0.05055,0.1,0)</postion>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_G3Sa</li>
+								<li>Module_G3Sb</li>
+								<li>Module_G3Sc</li>
+								<li>Module_G3Sd</li>
+							</thingDefs>
+						</filter>
+					</li>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="true" />
+						<postion>(0.0171,1,0)</postion>
+						<scale>(1,0,1)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>
+								<li>PaWT_HK69GL</li>
+								<li>Pa_M320K</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+				<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+				</compPropertiesCreateInstanceCompType>
+			</li>
+        </comps>
+        <smeltProducts>
+			<SMG_Component>1</SMG_Component>
+            <Weapon_Parts>2</Weapon_Parts>
+        </smeltProducts>
+    </ThingDef>
+	
+	<!-- MP5 Custom SMG -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMP5C</defName>
+		<label>Build a MP5 Custom</label>
+		<description>Build a MP5 Custom, just the receiver and the grip part, you need other parts to work better, unless you are in a budget.\nCaliber: 5.56x45mm NATO</description>
+		<jobString>Building MP5 Custom.</jobString>
+		<workAmount>8000</workAmount>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SMG_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>30</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_MP5B>1</PaWT_MP5B>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SMG_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>BlowbackOperation</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

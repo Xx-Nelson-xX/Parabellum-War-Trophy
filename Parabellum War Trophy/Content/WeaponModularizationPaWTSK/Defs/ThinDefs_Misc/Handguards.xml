@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--Handguars and rails-->
+	
+	<!--ParentName-->
+	<ThingDef Name="Module_Handguard" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_HandGuard_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Handguard</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<!--MP5K Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_MP5KHG</defName>
+		<label>MP5K Handguard</label>
+		<description>Pistol length handguard with vertical foregrip for the G3 family.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.113</Mass>
+			<Bulk>0.4</Bulk>
+			<MarketValue>80</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>2</Plastic>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGa</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>0.4</Bulk>
+					<MarketValue>80</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.8</SwayFactor>
+					<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.94</recoilAmount>-->
+						<warmupTime>0.9</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<disallowedOtherPart>
+					<thingDefs>
+						<li>Module_VerticalGrip</li>
+						<li>Module_AngledGrip</li>
+						<li>Module_UBGL</li>
+						<li>Module_MasterKey</li>
+					</thingDefs>
+				</disallowedOtherPart>
+				<attachmentProperties>
+					<!--<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.291,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+					</li>-->
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--MP5 Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_MP5HG</defName>
+		<label>MP5 Handguard</label>
+		<description>Classic MP5 handguard for the G3 family.</description>
+		<statBases>
+			<WorkToMake>1400</WorkToMake>
+			<Mass>0.17</Mass>
+			<Bulk>0.6</Bulk>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>4</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SMG_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGb</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>0.6</Bulk>
+					<MarketValue>100</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.9</SwayFactor>
+					<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.96</recoilAmount>-->
+						<warmupTime>1.15</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.29,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--MP5SD Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_MP5SDHG</defName>
+		<label>MP5SD Handguard</label>
+		<description>MP5SD handguard for the G3 family.</description>
+		<statBases>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.17</Mass>
+			<Bulk>0.72</Bulk>
+			<MarketValue>120</MarketValue>
+		</statBases>
+		<costList>
+			<Rubber>5</Rubber>
+		</costList>
+		<recipeMaker>
+			<recipeUsers>
+				<li>WeaponCraftingWorkTable</li>
+			</recipeUsers>
+			<researchPrerequisite>SMG_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGc</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>0.72</Bulk>
+					<MarketValue>120</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.85</SwayFactor>
+					<RangedWeapon_Cooldown>1.08</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.29,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+								<!--<li>Module_UBGL</li>
+								<li>Module_MasterKey</li>-->
+							</thingDefs>
+						</filter>
+					</li>
+				</attachmentProperties>
+				<!--<compGetGizmosExtraAllowedCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+					<li>CombatExtended.Verb_ShootCE</li>
+				</compGetGizmosExtraAllowedCompType>
+				<compPropertiesInitializeCompType>
+					<li>CombatExtended.CompAmmoUser</li>
+					<li>CombatExtended.CompFireModes</li>
+					<li>CombatExtended.Verb_ShootCE</li>
+				</compPropertiesInitializeCompType>
+				<compPropertiesCreateInstanceCompType>
+					<li>CombatExtended.CompFireModes</li>
+					<li>CombatExtended.Verb_ShootCE</li>
+				</compPropertiesCreateInstanceCompType>-->
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--G3A3 Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_G3A3HG</defName>
+		<label>G3A3 Handguard</label>
+		<description>G3A3 carbine length handguard with rails for the G3 family.</description>
+		<statBases>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>0.34</Mass>
+			<Bulk>0.86</Bulk>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>6</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Range_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGd</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>0.86</Bulk>
+					<MarketValue>150</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.85</SwayFactor>
+					<RangedWeapon_Cooldown>1.15</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.9</recoilAmount>-->
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.29,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--G3 Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_G3HG</defName>
+		<label>G3 Handguard</label>
+		<description>Classic G3 rifle length handguard with rails for the G3 family.</description>
+		<statBases>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>0.34</Mass>
+			<Bulk>1.08</Bulk>
+			<MarketValue>180</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>7</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGe</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>1.08</Bulk>
+					<MarketValue>180</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.8</SwayFactor>
+					<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.9</recoilAmount>-->
+						<warmupTime>1.22</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.29,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--G3A3 Handguard-->
+	<ThingDef ParentName="Module_Handguard">
+		<defName>ModuleG3_MSG90HG</defName>
+		<label>MSG90 Handguard</label>
+		<description>MSG90 rifle length handguard with rails for the G3 family.</description>
+		<statBases>
+			<WorkToMake>2600</WorkToMake>
+			<Mass>0.255</Mass>
+			<Bulk>1.22</Bulk>
+			<MarketValue>240</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>10</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Handguards/PaWT_HKRB_HGf</PartTexPath>
+				<drawChildPartWhenOnGround>false</drawChildPartWhenOnGround>
+				<setRandomPartWhenCreate>true</setRandomPartWhenCreate>
+				<statOffset>
+					<Bulk>1.22</Bulk>
+					<MarketValue>240</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.75</SwayFactor>
+					<RangedWeapon_Cooldown>1.34</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.9</recoilAmount>-->
+						<warmupTime>1.42</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+				<attachmentProperties>
+					<li>
+						<id>ModAR_UnderBarrel</id>
+						<name>under barrel</name>
+						<UITexPath>ui/icons/AttachmentIcon/AttachmentIcon_Underbarrel</UITexPath>
+						<verbPropertiesObjectPatchByChildPart Default="false" />
+						<postion>(-0.29,0.1,-0.007626)</postion>
+						<scale>(0.75,0,0.75)</scale>
+						<allowEmpty>true</allowEmpty>
+						<filter>
+							<thingDefs>
+								<li>Module_Bipod</li>
+								<li>Module_VerticalGrip</li>
+								<li>Module_AngledGrip</li>
+							</thingDefs>
+						</filter>
+						<allowedExtraCompType>
+							<li>CombatExtended.BipodComp</li>
+						</allowedExtraCompType>
+					</li>
+				</attachmentProperties>
+			</li>
+		</comps>
+	</ThingDef>
+
+	
+</Defs>

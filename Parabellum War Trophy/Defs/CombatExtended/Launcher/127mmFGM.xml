@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoJFGM</defName>
+		<label>127mm Javelin FGM</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>Things/Ammo/RPG/SMAW_HEAT/SMAW_HEAT_a</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_JFGM</defName>
+		<label>127mm Javelin FGM</label>
+		<ammoTypes>
+			<Ammo_127mmJFGM_HEAT>Bullet_127mmJFGM_HEAT</Ammo_127mmJFGM_HEAT>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="JFGMBase" ParentName="AmmoBase" Abstract="True">
+		<description>Fire-and-Forget Guided Missile for FGM-148 Javelin, can lock on any target marked by laser designator, either from CLU or any 3rd party laser designator for pin point bunker/tank busting.</description>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Mass>15.9</Mass>
+			<Bulk>8.2</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoJFGM</li>
+		</thingCategories>
+		<stackLimit>25</stackLimit>
+		<cookOffFlashScale>40</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+		<cookOffSpeed>0.6</cookOffSpeed>
+		<cookOffTailSound>ShellCookOff_Ambient</cookOffTailSound>
+	</ThingDef>
+	
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="JFGMBase">
+		<defName>Ammo_127mmJFGM_HEAT</defName>
+		<label>127mm Javelin FGM(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Ammo/RPG/SMAW_HEAT</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>162</MarketValue>
+		</statBases>
+		<ammoClass>127mmJFGM</ammoClass>
+		<detonateProjectile>Bullet_127mmJFGM_HEAT</detonateProjectile>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseJFGM" ParentName="BaseRocketLauncher" Abstract="true">
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>60</speed><!--300m/s-->
+			<explosionChanceToStartFire>0.22</explosionChanceToStartFire>
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseJFGM">
+		<defName>Bullet_127mmJFGM_HEAT</defName>
+		<label>127mm Javelin FGM(HEAT)</label>
+		<graphicData>
+			<texPath>Things/Projectile/Missile/Javelin</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>10</gravityFactor>
+			<damageDef>ACP</damageDef>
+			<damageAmountBase>368</damageAmountBase>
+			<armorPenetrationSharp>750</armorPenetrationSharp>
+			<armorPenetrationBlunt>61.39</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>328</damageAmountBase>
+				<explosiveDamageType>ACB</explosiveDamageType>
+				<explosiveRadius>4.4</explosiveRadius>
+			</li>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_RocketFrag>7</Fragment_RocketFrag>
+					<Fragment_Small>27</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!-- ==================== Recipes ========================== -->
+	
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_127mmJFGM_HEAT</defName>
+		<label>make 127mm Javelin FGM(HEAT) x1</label>
+		<description>Craft a 127mm Javelin FGM(HEAT).</description>
+		<jobString>Making 127mm Javelin FGM(HEAT).</jobString>
+		<workAmount>2000</workAmount>
+		<targetCountAdjustment>5</targetCountAdjustment>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+						<li>USLDBar</li>
+					</categories>
+				</filter>
+				<count>40</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>HeavyBar</li>
+					</categories>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Powder</li>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ElectronicComponents</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HeavyBar</li>
+			</categories>
+			<thingDefs>
+				<li>Powder</li>
+				<li>FSX</li>
+				<li>ElectronicComponents</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_127mmJFGM_HEAT>1</Ammo_127mmJFGM_HEAT>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>Rockets_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Magnum Research BFR -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildBFR</defName>
+		<label>Build Magnum Research BFR</label>
+		<description>Build a Magnum Research BFR, is what the Hunting Revolver is based off, a slightly larger "Big Iron".\nCaliber: Large size hunting round</description>
+		<jobString>Building Magnum Research BFR.</jobString>
+		<workAmount>24000</workAmount>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Heavy_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>	
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pistol_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>28</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Rubber</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_BFR>1</PaWT_BFR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Heavy_Component</li>
+				<li>Pistol_Component</li>
+				<li>ComponentIndustrial</li>
+				<li>Rubber</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+				<li>HCMBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Pistols_C2</researchPrerequisite>
+	</RecipeDef>
+	
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>HMC Vile's Pre-Industrial Overhaul</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_LSHR"]/ammoTypes</xpath>
+					<value>
+						<Ammo_5070Govt>Bullet_5070Govt</Ammo_5070Govt>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_5070Govt"]/ammoTypes</xpath>
+					<value>
+						<Ammo_4570Govt_FMJ>Bullet_4570Govt_FMJ</Ammo_4570Govt_FMJ>
+						<Ammo_4570Govt_JHP>Bullet_4570Govt_JHP</Ammo_4570Govt_JHP>
+						<Ammo_4570Govt_Forage>Bullet_4570Govt_Forage</Ammo_4570Govt_Forage>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+    </Operation>
+	
+</Patch>

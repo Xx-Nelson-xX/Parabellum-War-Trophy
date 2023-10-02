@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--Stock-->
+	
+	<!--ParentName-->
+	<!--<ThingDef Name="Module_Stock" ParentName="GunPartBase" Abstract="True">
+		<graphicData>
+			<texPath>Things/WeaponPart/Parts/AttachmentItem_Stock_Generic</texPath>
+		</graphicData>
+		<uiIconPath>ui/icons/AttachmentIcon/AttachmentIcon_Stock</uiIconPath>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ARToolingSet</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>-->
+	
+	<!--MP5 Retractable Buttstock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_G3Sa</defName>
+		<label>MP5 Retractable Buttstock</label>
+		<description>MP5 SMG retractable buttstock, light weight, simple and not very comfortable leaning your head on it.</description>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<Mass>0.68</Mass>
+			<Bulk>0.24</Bulk>
+			<MarketValue>50</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>1</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>BlowbackOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>2</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/PaWT_HKRB_Stocka</PartTexPath>
+				<statOffset>
+					<Bulk>0.24</Bulk>
+					<MarketValue>50</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.9</SwayFactor>
+					<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.8</recoilAmount>-->
+						<warmupTime>0.95</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--MP5 A2 Fixed Stock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_G3Sb</defName>
+		<label>MP5 A2 Fixed Stock</label>
+		<description>MP5 A2 Fixed Stock, simple, sturdy and light weight.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.454</Mass>
+			<Bulk>1.1</Bulk>
+			<MarketValue>100</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>4</Plastic>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>SMG_C2</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/PaWT_HKRB_Stockb</PartTexPath>
+				<statOffset>
+					<Bulk>1.1</Bulk>
+					<MarketValue>100</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.75</SwayFactor>
+					<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.85</recoilAmount>-->
+						<warmupTime>1.05</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--G3 Fixed Stock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_G3Sc</defName>
+		<label>G3 Fixed Stock</label>
+		<description>G3 Fixed Stock, simple and sturdy.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.907</Mass>
+			<Bulk>1.35</Bulk>
+			<MarketValue>120</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>4</Plastic>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>Rifles_C1</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/PaWT_HKRB_Stockc</PartTexPath>
+				<statOffset>
+					<Bulk>1.35</Bulk>
+					<MarketValue>120</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SwayFactor>0.7</SwayFactor>
+					<RangedWeapon_Cooldown>1.14</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.85</recoilAmount>-->
+						<warmupTime>1.1</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	<!--MSG 90 Adjustable Stock-->
+	<ThingDef ParentName="Module_Stock">
+		<defName>Module_G3Sd</defName>
+		<label>MSG 90 Adjustable Stock</label>
+		<description>G3 Fixed Stock, simple and sturdy.</description>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.814</Mass>
+			<Bulk>1.6</Bulk>
+			<MarketValue>150</MarketValue>
+		</statBases>
+		<costList>
+			<Plastic>6</Plastic>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisite>PrecisionRifling</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon">
+				<PartTexPath>Things/WeaponPart/Stocks/PaWT_HKRB_Stockd</PartTexPath>
+				<statOffset>
+					<Bulk>1.6</Bulk>
+					<MarketValue>150</MarketValue>
+				</statOffset>
+				<statMultiplier>
+					<SightsEfficiency>1.05</SightsEfficiency>
+					<SwayFactor>0.55</SwayFactor>
+					<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+				</statMultiplier>
+				<verbPropertiesMultiplier>
+					<li>
+						<!--<recoilAmount>0.85</recoilAmount>-->
+						<warmupTime>1.3</warmupTime>
+					</li>
+				</verbPropertiesMultiplier>
+			</li>
+		</comps>
+	</ThingDef>
+	
+</Defs>

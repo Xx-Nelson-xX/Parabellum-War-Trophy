@@ -3,12 +3,13 @@
 
     <!-- HK21E(K) -->
     <ThingDef ParentName="BaseGun_Heavy">
-        <defName>Pa_HK21EK</defName>
+        <defName>PaWT_HK21EK</defName>
         <label>HK21Ek</label>
         <description>The HK21 Export Kurz is a modified GPMG with removed the stock, bipod and shorten the barrel to make it lighter and easier to carry around, though that reduce its stability, accuracy and effective range as trade off.</description>
         <graphicData>
             <texPath>Things/Weapons/MGs/HK21EK</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <statBases>
@@ -55,7 +56,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>7</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">
@@ -78,7 +79,7 @@
 	
 	<!-- HK25(K) -->
     <ThingDef ParentName="BaseGun_Heavy">
-        <defName>Pa_HK25K</defName>
+        <defName>PaWT_HK25K</defName>
         <label>HK25(K)</label>
         <description>The HK25(Krieg) is a modified HK25 Heavy MachineGun, further reduce its weight and size to be more man-portable, the trade off is it kicks more and less controllable than the original one, might require special gear and skillful shooter to use it effectively.</description>
         <graphicData>
@@ -133,7 +134,7 @@
         <comps>
             <li Class="CombatExtended.CompProperties_FireModes">
                 <aiUseBurstMode>true</aiUseBurstMode>
-                <aiAimMode>AimedShot</aiAimMode>
+                <aiAimMode>SuppressFire</aiAimMode>
                 <aimedBurstShotCount>3</aimedBurstShotCount>
             </li>
             <li Class="CombatExtended.CompProperties_AmmoUser">

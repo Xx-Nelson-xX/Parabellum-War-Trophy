@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	
+	<!-- =============== M30 Luftwaffe Drilling(Replica) =============== -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildM30LDR</defName>
+		<label>Build a M30 Luftwaffe Drilling(Replica)</label>
+		<description>Build a M30 Luftwaffe Drilling(Replica). This is actually a very high budget "Survival gun" for that era, sounds like someone actually want one for their hobby.\nCaliber: .45-70 Government</description>
+		<jobString>Building M30 Luftwaffe Drilling(Replica).</jobString>
+		<workAmount>11000</workAmount>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>36</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>22</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_M30LDR>1</PaWT_M30LDR>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>WeaponCraftingWorkTable</li>
+		</recipeUsers>
+		<researchPrerequisite>Machining</researchPrerequisite>
+	</RecipeDef>
+
+</Defs>

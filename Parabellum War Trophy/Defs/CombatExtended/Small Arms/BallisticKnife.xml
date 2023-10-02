@@ -7,7 +7,7 @@
 		<defName>AmmoSet_BK</defName>
 		<label>Ballistic Knife</label>
 		<ammoTypes>
-			<Pa_BK>BK_Shoot</Pa_BK>
+			<PaWT_BK>BK_Shoot</PaWT_BK>
 		</ammoTypes>
 	</CombatExtended.AmmoSetDef>
 	
@@ -27,7 +27,7 @@
 			<armorPenetrationSharp>7.4</armorPenetrationSharp>
 			<armorPenetrationBlunt>5</armorPenetrationBlunt>
 			<preExplosionSpawnChance>0.8</preExplosionSpawnChance>
-			<preExplosionSpawnThingDef>Pa_BK</preExplosionSpawnThingDef>
+			<preExplosionSpawnThingDef>PaWT_BK</preExplosionSpawnThingDef>
 		</projectile>
 	</ThingDef>
 

@@ -54,7 +54,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_XM16E1FPW>1</Pa_XM16E1FPW>
+			<PaWT_XM16E1FPW>1</PaWT_XM16E1FPW>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -127,7 +127,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_HK51k>1</Pa_HK51k>
+			<PaWT_HK51k>1</PaWT_HK51k>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -200,7 +200,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_M1A1_30PDW>1</Pa_M1A1_30PDW>
+			<PaWT_M1A1_30PDW>1</PaWT_M1A1_30PDW>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -266,7 +266,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_M1A1C>1</Pa_M1A1C>
+			<PaWT_M1A1C>1</PaWT_M1A1C>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -331,7 +331,7 @@
 			</li>
 		</ingredients>
 		<products>
-			<Pa_M2C>1</Pa_M2C>
+			<PaWT_M2C>1</PaWT_M2C>
 		</products>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -349,6 +349,143 @@
 			<li>WeaponCraftingWorkTable</li>
 		</recipeUsers>
 		<researchPrerequisite>SMG_C2</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- Marlin 1895 -->
+	
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildMarlin1895C</defName>
+		<label>Build a Marlin 1895</label>
+		<description>Build a Marlin 1895. Don't let the name fool you, is not really an old school level-action but a modern one mainly for hunting.\nCaliber: .45-70 Government</description>
+		<jobString>Building Marlin 1895.</jobString>
+		<workAmount>14000</workAmount>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>SLDBar</li>
+					</categories>
+				</filter>
+				<count>42</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Woody</li>
+					</categories>
+				</filter>
+				<count>26</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_Marlin1895C>1</PaWT_Marlin1895C>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>Woody</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<researchPrerequisite>Parabellum_Alpha</researchPrerequisite>
+	</RecipeDef>
+	
+	<!-- XM16E1 FPW -->
+	<RecipeDef ParentName="RangedWeaponRecipeBase">
+		<defName>BuildGalilACE21H</defName>
+		<label>Build Micro Galil ACE 21H</label>
+		<description>Builds a Micro Galil ACE 21 Hybrid. Despite being a derivative of their popular cousin, the weapon got the class and open for both side of the block...\nCaliber: 5.56x45mm NATO</description>
+		<jobString>Building Micro Galil ACE 21.</jobString>
+		<workAmount>15200</workAmount>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AdvRifle_Component</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Weapon_Parts</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>Metallic</li>
+					</categories>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plastic</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<PaWT_GalilACE21H>1</PaWT_GalilACE21H>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AdvRifle_Component</li>
+				<li>Weapon_Parts</li>
+				<li>ComponentIndustrial</li>
+				<li>Plastic</li>
+			</thingDefs>
+			<categories>
+				<li>SLDBar</li>
+				<li>USLDBar</li>
+			</categories>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>AdvWeaponCraftingWorkTable</li>
+		</recipeUsers>
+	    <researchPrerequisite>Rifles_C3</researchPrerequisite>
 	</RecipeDef>
 	
 </Defs>
