@@ -1,3 +1,31 @@
+<--------------------------------------- 1.2 -------------------------------------------->
+								Parabellum War Trophy
+								
+1.2 - 3 weapons and Tweaks
+
+SMGs:
+-(1.4 WM)MP5 Custom: 9x19mm Parabellum, Automatic(1/2/4), A customizable MP5 submachinegun with many HK parts available. 
+
+Carabines:
+-(1.4 WM)HK33 Custom: 5.56x45mm NATO, Automatic(1/2/4), A customizable HK33 assault rifle with many HK parts available.
+
+Rifles:
+-(1.4 WM)G3 Custom: 7.62x51mm NATO, Automatic(1/2/3), A customizable G3 battle rifle with many HK parts available.
+
+Launchers:
+-HK 69 Grenade Launcher: 40x46mm Grenade, Single Shot, old world law enforcement/military grenade launcher.
+  *(1.4 WM)HK79 UBGL: 40x46mm Grenade, Single Shot, under barrel grenade launcher attachment for HK rifle family.
+
+Tweaks/Fixes:
+- Moved M320 GL from Parabellum to here
+	*Increased the Range of M320 GL to 36 tiles to match the UBGL stat
+	*Rebalance for the same reason
+	*Crafting the weapon cost Heavy component instead of Rifle component
+	*Rebalance the cost of material of the weapon
+	
++Reduced Fliegerfaust HEI mini rocket overall cost for HEI mini rockets
++Added Bipod function for HK21Ek, HK25(K) and Abzats HAS
+
 <--------------------------------------- 1.1 -------------------------------------------->
 								Parabellum War Trophy
 								

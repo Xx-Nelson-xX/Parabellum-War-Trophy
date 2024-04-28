@@ -10,4 +10,11 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationReplace">	
+	<xpath>Defs/ThingDef/projectile[@Class="CombatExtended.ProjectilePropertiesCE"]/casingMoteDefname[text()="Mote_ShotgunShell"]</xpath>
+		<value>
+			<casingMoteDefname>Fleck_ShotgunShell</casingMoteDefname>
+		</value>
+	</Operation>
+	
 </Patch>

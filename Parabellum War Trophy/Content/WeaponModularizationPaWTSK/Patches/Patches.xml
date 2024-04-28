@@ -19,4 +19,12 @@
 		<order>Append</order>
 	</Operation>
 	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Pa_UniversalAR" or defName="Pa_UniversalAR_SMG" or defName="Pa_UniversalAR_BR" or defName="Pa_UniversalAR_SG"]/comps/li[@Class="RW_ModularizationWeapon.CompProperties_ModularizationWeapon"]/attachmentProperties/li[id="ModAR_UnderBarrel"]/filter/thingDefs</xpath>
+			<value>
+				<li>Pa_M320K</li>
+			</value>
+		<order>Append</order>
+	</Operation>
+	
 </Patch>
